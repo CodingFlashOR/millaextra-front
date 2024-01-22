@@ -6,9 +6,7 @@ interface Props {
 const { text, emoji } = Astro.props;
 
 ---
-
-
-<div>
-    <p>{text}</p>
-    <p>{emoji}</p>
+<div class="card rounded-lg w-52 h-56 p-4 flex flex-col justify-between" style="background: linear-gradient(to right, purple 40%, rgb(105, 0, 126) 60%);">
+    <p class="text-xl font-bold text-center text-white transition-all duration-500 " style="text-shadow: -1px 0 rgb(37, 3, 66), 0 1px rgb(37, 3, 66), 1px 0 rgb(37, 3, 66), 0 -1px rgb(37, 3, 66);">{text}</p>
+    <p class="text-5xl text-center mb-2 text-white transition-all duration-500">{emoji}</p>
 </div>
