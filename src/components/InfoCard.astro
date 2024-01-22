@@ -1,0 +1,14 @@
+---
+interface Props {
+	text: string;
+    emoji: string;
+}
+const { text, emoji } = Astro.props;
+
+---
+
+
+<div>
+    <p>{text}</p>
+    <p>{emoji}</p>
+</div>

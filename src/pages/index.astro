@@ -1,34 +1,51 @@
 ---
+import InfoCard from '../components/InfoCard.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="¡Bienvenidos a MillaExtra!">
 	<div class="m-auto mt-20 mb-10 container flex flex-col gap-20">
-		<h1 class="text-6xl font-bold text-center text-blue-600">Bienvenidos a MillaExtra 🚀</h1>
-		<div class="container w-1/2 m-auto flex flex-col gap-6">
-			<p class="text-xl text-center text-gray-700">MillaExtra es tu recurso definitivo para el aprendizaje del desarrollo web. Aquí, no solo aprendes, sino que te desafías a ti mismo, vas más allá de los límites y das ese paso extra para convertirte en un desarrollador web competente.</p>
+		<h1 class="md:text-6xl text-3xl font-bold text-center text-purple-800">Bienvenidos a MillaExtra 🚀</h1>
+
+		<hr class="border-t-2 border-purple-800 mx-auto W-3/4">
+
+
+		<div class="container md:w-1/2 p-2 m-auto flex flex-col gap-6">
+			<p class="text-xl text-center text-gray-700">MillaExtra es tu recurso definitivo para el aprendizaje del desarrollo web. Aquí, no solo aprendes, sino que te desafías a ti mismo, vas más allá de los límites y das ese paso extra para convertirte en un desarrollador web competente. Este es un espacio donde se guarda material adicional no solo para las personas que estudian en "aulas", sino también para aquellos que participan en cursos y bootcamps.</p>
 	
-			<h2 class="text-3xl font-bold text-center text-blue-500">¿Qué es MillaExtra? 🧐</h2>
+			<h2 class="text-3xl font-bold text-center text-purple-800">¿Qué es MillaExtra? 🧐</h2>
 	
 			<p class="text-xl text-center text-gray-700">MillaExtra es una plataforma de aprendizaje en línea dedicada a proporcionar material de estudio de alta calidad y recursos de aprendizaje para aquellos interesados en el desarrollo web. Nuestro objetivo es ayudar a los estudiantes a ir más allá de lo básico, a explorar más profundamente y a obtener una comprensión más completa de la programación web.</p>
 	
 
 			
 			<div class="container m-auto flex flex-col gap-6 bg-yellow-100 p-10 border-2">
-				<h2 class="text-3xl font-bold text-center text-blue-500">¿Por qué MillaExtra? 🤔</h2>
+				<h2 class="text-3xl font-bold text-center text-purple-800">¿Por qué MillaExtra? 🤔</h2>
 
 				<p class="text-xl text-center text-gray-700">En MillaExtra, creemos que el aprendizaje no debería tener límites. Por eso, hemos creado un espacio donde puedes explorar y aprender más allá de lo que se enseña en el aula. Aquí, puedes encontrar:</p>
 	
-				<ul class="list-disc list-inside text-xl text-start text-gray-600">
-					<li class="py-1">Tutoriales detallados y bien explicados</li>
-					<li class="py-1">Ejercicios prácticos para mejorar tus habilidades</li>
-					<li class="py-1">Recursos adicionales para profundizar en los temas</li>
-					<li class="py-1">Una comunidad de aprendizaje activa y de apoyo</li>
-				</ul>
+				<div >
+					<InfoCard
+					text="Tutoriales detallados y bien explicados"
+					emoji='📚'
+					></InfoCard>
+					<InfoCard
+					text="Ejercicios prácticos para mejorar tus habilidades"
+					emoji='💪'
+					></InfoCard>
+					<InfoCard
+					text="Recursos adicionales para profundizar en los temas"
+					emoji='🔍'
+					></InfoCard>
+					<InfoCard
+					text="Una comunidad de aprendizaje activa y de apoyo"
+					emoji='👥'
+					></InfoCard>
+				</div>
 			</div>
 
 	
-			<h2 class="text-3xl font-bold text-center text-blue-500">Únete a nosotros hoy 🎉</h2>
+			<h2 class="text-3xl font-bold text-center text-purple-800">Únete a nosotros hoy 🎉</h2>
 	
 			<p class="text-xl text-center text-gray-700">Si estás listo para dar un paso extra en tu viaje de aprendizaje del desarrollo web, ¡únete a nosotros hoy en MillaExtra!</p>
 		</div>
