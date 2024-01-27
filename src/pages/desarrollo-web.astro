@@ -1,5 +1,7 @@
 ---
+import CardTecnologias from '../components/CardTecnologias.astro';
 import Layout from '../layouts/Layout.astro';
+
 ---
 
 <Layout title='Desarrollo Web'>
@@ -14,7 +16,12 @@ import Layout from '../layouts/Layout.astro';
             <h2 class="text-3xl font-bold text-center text-purple-800">¿Por qué Desarrollo Web? 🤔</h2>
             <p class="text-xl text-center text-gray-700">En Desarrollo Web, creemos que el aprendizaje no debería tener límites. Por eso, hemos creado un espacio donde puedes explorar y aprender más allá de lo que se enseña en el aula. Aquí, puedes encontrar tutoriales detallados y bien explicados, ejercicios prácticos para mejorar tus habilidades, recursos adicionales para profundizar en los temas y una comunidad de aprendizaje activa y de apoyo.</p>
             
-            <h2 class="text-3xl font-bold text-center text-purple-800">Material proximamente 🎉</h2>
+            <h2 class="text-3xl font-bold text-center text-purple-800">Tecnologias 💻</h2>
+            <div class="gap-4 container flex flex-wrap items-center justify-center">
+                <CardTecnologias url='https://cdn.worldvectorlogo.com/logos/logo-javascript.svg' tecnologia='JavaScript'/>
+                <CardTecnologias url='https://cdn.worldvectorlogo.com/logos/logo-javascript.svg' tecnologia='JavaScript'/>                <CardTecnologias url='https://cdn.worldvectorlogo.com/logos/logo-javascript.svg' tecnologia='JavaScript'/>
+                <CardTecnologias url='https://cdn.worldvectorlogo.com/logos/logo-javascript.svg' tecnologia='JavaScript'/>
+            </div>
         </div>
     </div>
 </Layout>

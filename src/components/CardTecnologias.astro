@@ -1,0 +1,13 @@
+---
+interface Props {
+	tecnologia: string;
+    url: string
+}
+const { tecnologia, url } = Astro.props;
+---
+
+<div class="w-40 flex flex-col items-center gap-2">
+    <img class="" src={url} alt="">
+    <p class=" font-bold">{tecnologia}</p>
+    <a class="text-purple-800 hover:text-purple-400" href="/desarrollo-web">ver mas...</a>
+</div>
