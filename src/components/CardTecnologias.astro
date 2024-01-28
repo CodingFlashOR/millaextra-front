@@ -2,12 +2,13 @@
 interface Props {
 	tecnologia: string;
     url: string
+    path: string
 }
-const { tecnologia, url } = Astro.props;
+const { tecnologia, url, path } = Astro.props;
 ---
 
 <div class="w-40 h-60 flex flex-col items-center gap-2 justify-between">
     <img class="h-40" src={url} alt="">
     <p class=" font-bold">{tecnologia}</p>
-    <a class="text-purple-800 hover:text-purple-400" href="/desarrollo-web">ver mas...</a>
+    <a class="text-purple-800 hover:text-purple-400" href={path}>ver mas...</a>
 </div>
