@@ -1,0 +1,35 @@
+---
+
+import CardTecnologias from '../components/CardTecnologias.astro';
+import Layout from '../layouts/Layout.astro';
+
+---
+
+<Layout title='Frontend'>
+    <div class="container mx-auto ">
+        <div class="md:w-1/2 p-2 m-auto flex flex-col gap-6">
+            <h2 class="text-3xl font-bold text-center text-purple-800">¡Bienvenido al mundo del Frontend!</h2>
+            <p class="text-xl text-center text-gray-700">El frontend es la parte de la web que interactúa directamente con los usuarios. Aquí, aprenderás sobre las tecnologías y herramientas que hacen posible esta interacción.</p>
+            
+            <h2 class="text-3xl font-bold text-center text-purple-800">¿Qué es el Frontend? 🧐</h2>
+            <p class="text-xl text-center text-gray-700">El desarrollo frontend se refiere a la construcción de la interfaz de usuario de una aplicación web, es decir, todo lo que ves y con lo que interactúas en una página web. Incluye la estructura (HTML), el estilo (CSS) y la funcionalidad (JavaScript).</p>
+            
+            <h2 class="text-3xl font-bold text-center text-purple-800">¿Por qué aprender Frontend? 🤔</h2>
+            <p class="text-xl text-center text-gray-700">El desarrollo frontend es esencial en la creación de aplicaciones web modernas. Con las habilidades de frontend, puedes crear sitios web interactivos y atractivos. Además, es una habilidad muy demandada en la industria de la tecnología.</p>
+            <div class="container m-auto flex flex-col gap-6 bg-zinc-100 p-10 border-2">
+                <h2 class="text-3xl font-bold text-center text-purple-800">Tecnologías clave en el Frontend 💻</h2>
+                <div class="gap-4 container flex flex-wrap items-center justify-center">
+                    <CardTecnologias url='https://static.vecteezy.com/system/resources/previews/018/887/459/non_2x/internet-line-icon-png.png' tecnologia='Internet' path="/frontend/internet"/>
+                    <CardTecnologias url='https://cdn.worldvectorlogo.com/logos/html-1.svg' tecnologia='HTML' path="/frontend/html"/>
+                    <CardTecnologias url='https://cdn.worldvectorlogo.com/logos/css-3.svg' tecnologia='CSS'
+                    path="/frontend/css"/>                
+                    <CardTecnologias url='https://cdn.worldvectorlogo.com/logos/logo-javascript.svg' tecnologia='JavaScript' path="/frontend/javascript"/>
+                    <CardTecnologias url='https://cdn.worldvectorlogo.com/logos/react-2.svg' tecnologia='React' path="/frontend/react"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</Layout>
+
+<style>
+</style>
