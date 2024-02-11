@@ -1,7 +1,29 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 ---
+<Layout title='Anatomía de un Elemento HTML'>
+    <div class="container mx-auto p-6">
+        <div class="md:w-1/2 p-2 m-auto flex flex-col gap-6">
+            <h1 class="text-3xl font-bold text-center text-purple-800">Anatomía de un Elemento HTML</h1>
+            
+            <h2 class="text-2xl font-bold text-center text-purple-800">¿Qué es un elemento HTML?</h2>
+            <p class="text-xl text-center text-gray-700">Un elemento HTML es una unidad individual de contenido en un documento HTML o página web. Los elementos HTML son denotados por etiquetas, escritas usando paréntesis angulares.</p>
+            
+            <h2 class="text-2xl font-bold text-center text-purple-800">Partes de un elemento HTML</h2>
+            <p class="text-xl text-center text-gray-700">Un elemento HTML típico consta de una etiqueta de apertura, contenido y una etiqueta de cierre. Sin embargo, algunos elementos HTML son "vacíos" o "autocerrados", lo que significa que no tienen contenido ni necesitan una etiqueta de cierre. Por ejemplo, el elemento de imagen (`&lt;img&gt;`) es un elemento vacío.</p>
+            
+            <h2 class="text-2xl font-bold text-center text-purple-800">Atributos de un elemento HTML</h2>
+            <p class="text-xl text-center text-gray-700">Los atributos proporcionan información adicional sobre un elemento HTML. Se colocan dentro de la etiqueta de apertura de un elemento HTML y suelen venir en pares de nombre/valor. Por ejemplo, en el elemento de imagen (`&lt;img src="ruta/a/la/imagen.jpg" alt="Descripción de la imagen"&gt;`), `src` y `alt` son atributos.</p>
+            
+            <h2 class="text-2xl font-bold text-center text-purple-800">Elementos anidados</h2>
+            <p class="text-xl text-center text-gray-700">Los elementos HTML pueden ser anidados dentro de otros elementos. Un elemento anidado se llama un "elemento hijo", y el elemento en el que está anidado se llama un "elemento padre". Por ejemplo, en `&lt;p&gt;Este es un &lt;strong&gt;texto&lt;/strong&gt; de ejemplo.&lt;/p&gt;`, el elemento `&lt;strong&gt;` está anidado dentro del elemento `&lt;p&gt;`.</p>
+            
+            <h2 class="text-2xl font-bold text-center text-purple-800">Elementos de bloque vs. elementos en línea</h2>
+            <p class="text-xl text-center text-gray-700">Los elementos HTML pueden ser de bloque o en línea. Los elementos de bloque, como `&lt;div&gt;`, `&lt;p&gt;` y `&lt;h1&gt;`, comienzan en una nueva línea y ocupan todo el ancho disponible. Los elementos en línea, como `&lt;span&gt;`, `&lt;a&gt;` y `&lt;img&gt;`, no comienzan en una nueva línea y solo ocupan el ancho necesario para su contenido.</p>
 
-<Layout title='alojar archivos en los sitios'>
-
+            <h2 class="text-2xl font-bold text-center text-purple-800">Elementos semánticos vs. no semánticos</h2>
+            <p class="text-xl text-center text-gray-700">Los elementos HTML pueden ser semánticos o no semánticos. Los elementos semánticos, como `&lt;article&gt;`, `&lt;section&gt;`, `&lt;nav&gt;` y `&lt;header&gt;`, proporcionan información sobre el tipo de contenido que contienen. Los elementos no semánticos, como `&lt;div&gt;` y `&lt;span&gt;`, no proporcionan ninguna información sobre el tipo de contenido que contienen.</p>
+            <a class="text-purple-800 text-3xl font-bold text-center hover:text-purple-400" href="/frontend/html/uso-de-atributos-en-html">Uso de atributos en HTML...</a>
+        </div>
+    </div>
 </Layout>
