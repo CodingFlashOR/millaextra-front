@@ -1,7 +1,27 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 ---
-
-<Layout title='alojar archivos en los sitios'>
-
+<Layout title='Uso de Atributos en HTML'>
+    <div class="container mx-auto p-6">
+        <div class="md:w-1/2 p-2 m-auto flex flex-col gap-6">
+            <h1 class="text-3xl font-bold text-center text-purple-800">Uso de Atributos en HTML</h1>
+            
+            <h2 class="text-2xl font-bold text-center text-purple-800">¿Qué es un atributo HTML?</h2>
+            <p class="text-xl text-center text-gray-700">Un atributo HTML proporciona información adicional sobre un elemento HTML. Se colocan dentro de la etiqueta de apertura de un elemento HTML y suelen venir en pares de nombre/valor.</p>
+            
+            <h2 class="text-2xl font-bold text-center text-purple-800">Tipos de atributos HTML</h2>
+            <p class="text-xl text-center text-gray-700">Existen muchos tipos de atributos HTML, como `class`, `id`, `src`, `alt`, `style`, entre otros. Cada uno tiene un propósito específico y ayuda a definir las características del elemento HTML.</p>
+            
+            <h2 class="text-2xl font-bold text-center text-purple-800">Atributos globales y específicos</h2>
+            <p class="text-xl text-center text-gray-700">Los atributos globales son aquellos que pueden usarse en cualquier elemento HTML. Por otro lado, los atributos específicos solo pueden usarse en ciertos elementos HTML.</p>
+            
+            <h2 class="text-2xl font-bold text-center text-purple-800">Atributos booleanos</h2>
+            <p class="text-xl text-center text-gray-700">Los atributos booleanos son aquellos que solo necesitan estar presentes para aplicar su efecto. No necesitan un valor. Por ejemplo, el atributo `disabled` en un elemento de entrada (`&lt;input disabled&gt;`) es un atributo booleano.</p>
+            
+            <h2 class="text-2xl font-bold text-center text-purple-800">Atributos de datos personalizados</h2>
+            <p class="text-xl text-center text-gray-700">Los atributos de datos personalizados (`data-*`) permiten almacenar información extra en los elementos HTML, sin afectar la presentación y el comportamiento del elemento.</p>
+            
+            <a class="text-purple-800 text-3xl font-bold text-center hover:text-purple-400" href="/frontend/html/partes-de-una-pagina-web">Partes de una página web...</a>
+        </div>
+    </div>
 </Layout>
