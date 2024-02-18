@@ -1,7 +1,49 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 ---
-
-<Layout title='alojar archivos en los sitios'>
-
+<Layout title='Crear tablas y listas con tags HTML'>
+    <div class="container mx-auto p-6">
+        <div class="md:w-1/2 p-2 m-auto flex flex-col gap-6">
+            <h1 class="text-3xl font-bold text-center text-purple-800">Crear tablas y listas con tags HTML</h1>
+            
+            <h2 class="text-2xl font-bold text-center text-purple-800">¿Qué son las tablas y listas en HTML?</h2>
+            <p class="text-xl text-center text-gray-700">Las tablas y listas en HTML son etiquetas que nos permiten estructurar y organizar el contenido de una página web de manera lógica y semántica. Las tablas se crean con las etiquetas &lt;table&gt;, &lt;tr&gt;, &lt;td&gt; y &lt;th&gt;, mientras que las listas se crean con las etiquetas &lt;ul&gt;, &lt;ol&gt; y &lt;li&gt;.</p>
+            
+            <h2 class="text-2xl font-bold text-center text-purple-800">Ejemplo de cómo crear una tabla y una lista con HTML</h2>
+            <pre class="text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded pt-6 px-5 h-auto">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Título de la página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Encabezado 1&lt;/th&gt;
+            &lt;th&gt;Encabezado 2&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Dato 1&lt;/td&gt;
+            &lt;td&gt;Dato 2&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Elemento 1&lt;/li&gt;
+        &lt;li&gt;Elemento 2&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+            
+            <h2 class="text-2xl font-bold text-center text-purple-800">Importancia de las tablas y listas en HTML</h2>
+            <p class="text-xl text-center text-gray-700">Las tablas y listas en HTML son esenciales para la estructura de un documento porque permiten organizar el contenido de manera lógica y semántica. Los motores de búsqueda utilizan estas etiquetas para indexar el contenido de la página y determinar su relevancia para las consultas de búsqueda. Además, estas etiquetas mejoran la accesibilidad del sitio web, ya que los lectores de pantalla pueden interpretar estas etiquetas y presentar la información de una manera que sea accesible para los usuarios con discapacidades visuales.</p>
+            
+            <h2 class="text-2xl font-bold text-center text-purple-800">Uso correcto de las tablas y listas en HTML</h2>
+            <p class="text-xl text-center text-gray-700">Es importante usar las tablas y listas en HTML de manera correcta y coherente en un documento. Cada etiqueta debe ser utilizada para su propósito específico y no debe ser utilizada de manera incorrecta o abusiva. Además, es esencial cerrar correctamente todas las etiquetas para evitar errores de sintaxis y asegurar que la página se muestre correctamente en todos los navegadores.</p>
+            
+            <a class="text-purple-800 text-3xl font-bold text-center hover:text-purple-400" href="/frontend/html/insertar-contenido-multimedia-en-html">Insertar contenido multimedia en HTML</a>
+        </div>
+    </div>
 </Layout>
