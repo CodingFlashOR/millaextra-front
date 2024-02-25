@@ -1,7 +1,47 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 ---
-
-<Layout title='alojar archivos en los sitios'>
-
+<Layout title='Tags HTML para un formulario'>
+    <div class="container mx-auto p-6">
+        <div class="md:w-1/2 p-2 m-auto flex flex-col gap-6">
+            <h1 class="text-3xl font-bold text-center text-purple-800 mb-10">Tags HTML para un formulario</h1>
+            
+            <h2 class="text-2xl font-bold text-center text-purple-800">¿Qué son los formularios en HTML?</h2>
+            <p class="text-xl text-center text-gray-700">Los formularios en HTML son una parte esencial de cualquier página web que requiera la interacción del usuario, como iniciar sesión, registrarse, enviar comentarios, etc. Se crean utilizando la etiqueta &lt;form&gt; y pueden contener varios tipos de campos de entrada, como texto, correo electrónico, contraseña, casillas de verificación, botones de opción, etc.</p>
+            
+            <h2 class="text-2xl font-bold text-center text-purple-800">Ejemplo de cómo crear un formulario con HTML</h2>
+            <pre class="text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded pt-6 px-5 h-auto">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Título de la página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;form action="/ruta/al/servidor" method="post"&gt;
+        &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
+        &lt;input type="text" id="nombre" name="nombre"&gt;
+        
+        &lt;label for="correo"&gt;Correo electrónico:&lt;/label&gt;
+        &lt;input type="email" id="correo" name="correo"&gt;
+        
+        &lt;label for="contraseña"&gt;Contraseña:&lt;/label&gt;
+        &lt;input type="password" id="contraseña" name="contraseña"&gt;
+        
+        &lt;input type="submit" value="Enviar"&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+            
+            <h2 class="text-2xl font-bold text-center text-purple-800">Importancia de los formularios en HTML</h2>
+            <p class="text-xl text-center text-gray-700">Los formularios en HTML son esenciales para recoger información del usuario y enviarla al servidor. Son la principal interfaz de interacción entre el usuario y la página web. Además, los formularios son fundamentales para la accesibilidad, ya que permiten a los usuarios con discapacidades interactuar con la página web y realizar acciones como iniciar sesión, registrarse, enviar comentarios, etc.</p>
+            
+            <h2 class="text-2xl font-bold text-center text-purple-800">Uso correcto de los formularios en HTML</h2>
+            <p class="text-xl text-center text-gray-700">Es importante usar los formularios en HTML de manera correcta y coherente en un documento. Cada etiqueta debe ser utilizada para su propósito específico y no debe ser utilizada de manera incorrecta o abusiva. Además, es esencial proporcionar etiquetas de descripción para cada campo de entrada para mejorar la accesibilidad y la experiencia del usuario.</p>
+            
+            <a class="text-purple-800 text-3xl font-bold text-center hover:text-purple-400" href="/frontend/html/insertar-contenido-multimedia-en-html">Insertar contenido multimedia en HTML</a>
+        </div>
+    </div>
 </Layout>
