@@ -1,7 +1,42 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 ---
-
-<Layout title='alojar archivos en los sitios'>
-
+<Layout title='Insertar contenido multimedia en HTML'>
+    <div class="container mx-auto p-6">
+        <div class="md:w-1/2 p-2 m-auto flex flex-col gap-6">
+            <h1 class="text-3xl font-bold text-center text-purple-800 mb-10">Insertar contenido multimedia en HTML</h1>
+            
+            <h2 class="text-2xl font-bold text-center text-purple-800">¿Qué es el contenido multimedia en HTML?</h2>
+            <p class="text-xl text-center text-gray-700">El contenido multimedia en HTML se refiere a cualquier tipo de contenido que no es texto, como imágenes, audio, video y gráficos interactivos. Se pueden insertar en una página web utilizando varias etiquetas, como &lt;img&gt;, &lt;audio&gt;, &lt;video&gt; y &lt;canvas&gt;.</p>
+            
+            <h2 class="text-2xl font-bold text-center text-purple-800">Ejemplo de cómo insertar contenido multimedia en HTML</h2>
+            <pre class="text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded pt-6 px-5 h-auto">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Título de la página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;img src="ruta/a/la/imagen.jpg" alt="Descripción de la imagen"&gt;
+    &lt;audio controls&gt;
+        &lt;source src="ruta/al/audio.mp3" type="audio/mpeg"&gt;
+    &lt;/audio&gt;
+    &lt;video controls&gt;
+        &lt;source src="ruta/al/video.mp4" type="video/mp4"&gt;
+    &lt;/video&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+            
+            <h2 class="text-2xl font-bold text-center text-purple-800">Importancia del contenido multimedia en HTML</h2>
+            <p class="text-xl text-center text-gray-700">El contenido multimedia en HTML es esencial para mejorar la experiencia del usuario, ya que permite presentar información de una manera más atractiva y dinámica. Además, el contenido multimedia puede mejorar la accesibilidad de un sitio web, ya que las imágenes pueden tener texto alternativo que puede ser leído por los lectores de pantalla, y los videos y audios pueden tener subtítulos para los usuarios con discapacidades auditivas.</p>
+            
+            <h2 class="text-2xl font-bold text-center text-purple-800">Uso correcto del contenido multimedia en HTML</h2>
+            <p class="text-xl text-center text-gray-700">Es importante usar el contenido multimedia en HTML de manera correcta y coherente en un documento. Cada etiqueta debe ser utilizada para su propósito específico y no debe ser utilizada de manera incorrecta o abusiva. Además, es esencial proporcionar texto alternativo para las imágenes y subtítulos para los videos y audios para mejorar la accesibilidad.</p>
+            
+            <a class="text-purple-800 text-3xl font-bold text-center hover:text-purple-400" href="/frontend/html/tags-html-para-un-formulario">Tags HTML Para Un Formulario</a>
+        </div>
+    </div>
 </Layout>
