@@ -1,0 +1,36 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title='Unidades de medida en CSS'>
+    <div class="container mx-auto p-6">
+        <div class="md:w-1/2 p-2 m-auto flex flex-col gap-6">
+            <h1 class="text-3xl font-bold text-center text-purple-800 mb-10">Unidades de medida en CSS</h1>
+            
+            <p class="text-xl text-center text-gray-700">En CSS, las unidades de medida son esenciales para definir dimensiones, tamaños y posiciones de los elementos en una página web. Estas unidades se dividen en dos categorías principales: <span class="text-purple-800 font-bold">relativas</span> y <span class="text-purple-800 font-bold">absolutas</span>.</p>
+            
+            <h2 class="text-2xl font-bold text-center text-purple-800">Unidades absolutas:</h2>
+            <p class="text-xl text-gray-700">Las <span class="text-purple-800 font-bold">unidades absolutas</span> son fijas e inmutables, lo que significa que su valor no cambia en función del entorno o del contexto de la página. Algunas de las unidades absolutas más comunes son:</p>
+            <ul class="list-disc pl-8">
+                <li class="text-xl text-gray-700"><span class="text-purple-800 font-bold">px</span> (píxeles): Es la unidad más comúnmente utilizada y representa un solo punto en la pantalla.</li>
+                <li class="text-xl text-gray-700"><span class="text-purple-800 font-bold">in</span> (pulgadas): Equivale a una pulgada física, siendo 1 pulgada igual a 96 píxeles en la mayoría de los dispositivos.</li>
+                <li class="text-xl text-gray-700"><span class="text-purple-800 font-bold">pt</span> (puntos): Es una medida usada principalmente para impresión, donde 1 punto es igual a 1/72 de pulgada.</li>
+                <li class="text-xl text-gray-700"><span class="text-purple-800 font-bold">cm</span> (centímetros), <span class="text-purple-800 font-bold">mm</span> (milímetros), <span class="text-purple-800 font-bold">pc</span> (picas): Unidades de medida físicas que se utilizan principalmente en contextos de impresión o diseño gráfico.</li>
+            </ul>
+            
+            <h2 class="text-2xl font-bold text-center text-purple-800">Unidades relativas:</h2>
+            <p class="text-xl text-gray-700">Las <span class="text-purple-800 font-bold">unidades relativas</span> se ajustan dinámicamente en función de otros factores, como el tamaño del elemento padre o la configuración de la fuente. Esto las hace más adaptables y flexibles en diferentes entornos y dispositivos. Algunas de las unidades relativas más comunes son:</p>
+            <ul class="list-disc pl-8">
+                <li class="text-xl text-gray-700"><span class="text-purple-800 font-bold">em</span>: Esta unidad se basa en el tamaño de la fuente del elemento padre. Por ejemplo, si el tamaño de fuente del elemento padre es de 16px, 1em será igual a 16px.</li>
+                <li class="text-xl text-gray-700"><span class="text-purple-800 font-bold">rem</span>: Similar a 'em', pero se basa en el tamaño de fuente del elemento raíz (<code>{"<html>"}</code>), lo que la hace más predecible y fácil de manejar en diseños complejos.</li>
+                <li class="text-xl text-gray-700"><span class="text-purple-800 font-bold">%</span> (porcentaje): Representa un porcentaje del tamaño del elemento padre. Por ejemplo, si estableces un ancho del 50% en un elemento dentro de un contenedor, ocupará la mitad del ancho de su contenedor.</li>
+            </ul>
+            
+            <p class="text-xl text-gray-700">Es importante tener en cuenta que no siempre es correcto usar unidades de medida relativas. Se deben considerar las características de cada unidad y el contexto de uso para seleccionar la más adecuada en cada situación.</p>
+            
+            <p class="text-xl text-gray-700">Para obtener más detalles y profundizar en el uso de estas unidades, se recomienda consultar recursos en línea como <span class="text-purple-800 font-bold">MDN</span> (Mozilla Developer Network) y <span class="text-purple-800 font-bold">Desarrollo Web</span>, donde encontrarás información detallada y ejemplos prácticos.</p>
+
+            <a class="text-purple-800 text-3xl font-bold text-center hover:text-purple-400" href="/frontend/css/selectores">Selectores...</a>
+        </div>
+    </div>
+</Layout>

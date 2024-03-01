@@ -1,0 +1,30 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title='El modelo de caja en CSS'>
+    <div class="container mx-auto p-6">
+        <div class="md:w-1/2 p-2 m-auto flex flex-col gap-6">
+            <h1 class="text-3xl font-bold text-center text-purple-800 mb-10">El modelo de caja en CSS</h1>
+            
+            <h2 class="text-2xl font-bold text-center text-purple-800">Contenido de la caja (content box):</h2>
+            <p class="text-xl text-center text-gray-700">Es el área donde se muestra el contenido real del elemento, como el texto o la imagen. Su tamaño se puede controlar utilizando propiedades como width (ancho) y height (alto).</p>
+            
+            <h2 class="text-2xl font-bold text-center text-purple-800">Relleno de la caja (padding box):</h2>
+            <p class="text-xl text-center text-gray-700">El relleno es el espacio en blanco alrededor del contenido. Puedes ajustar su tamaño con la propiedad padding y otras relacionadas. El relleno proporciona espacio entre el contenido y el borde de la caja.</p>
+            
+            <h2 class="text-2xl font-bold text-center text-purple-800">Borde de la caja (border box):</h2>
+            <p class="text-xl text-center text-gray-700">El borde rodea el contenido y el relleno. Puedes personalizar su estilo, grosor y color con propiedades como border.</p>
+            
+            <h2 class="text-2xl font-bold text-center text-purple-800">Margen de la caja (margin box):</h2>
+            <p class="text-xl text-center text-gray-700">El margen es el espacio entre la caja actual y otras cajas cercanas. Controla la separación entre elementos adyacentes. Utiliza la propiedad margin para ajustar su tamaño.</p>
+            
+            <h2 class="text-2xl font-bold text-center text-purple-800">Tipos de cajas:</h2>
+            <p class="text-xl text-center text-gray-700">Cajas en bloque: Se extienden horizontalmente y forzan un salto de línea al final de la línea. Ejemplos son los párrafos (<code>{"<p>"}</code>), encabezados (<code>{"<h1>"}</code>), y divs.</p>
+            <p class="text-xl text-center text-gray-700">Cajas en línea: No fuerzan saltos de línea y se ajustan al contenido. Ejemplos son los enlaces (<code>{"<a>"}</code>), elementos de énfasis (<code>{"<em>"}</code>), y elementos de texto (<code>{"<span>"}</code>).</p>
+            <p class="text-xl text-center text-gray-700">Recuerda que puedes cambiar el tipo de visualización de una caja utilizando la propiedad display. Así que, ¡a jugar con las cajas y crea diseños increíbles! 📦🎨</p>
+            <a class="text-purple-800 text-3xl font-bold text-center hover:text-purple-400" href="/frontend/css/unidades-de-medida">Unidades de medida relativas y absolutas...</a>
+
+        </div>
+    </div>
+</Layout>
