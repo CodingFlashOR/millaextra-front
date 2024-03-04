@@ -1,0 +1,87 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title='Selectores CSS'>
+    <div class="container mx-auto p-6">
+        <div class="md:w-1/2 p-2 m-auto flex flex-col gap-6">
+            <h1 class="text-3xl font-bold text-center text-purple-800 mb-10">Selectores CSS</h1>
+
+            <p class="text-xl text-gray-700">Los selectores en CSS son patrones que nos permiten seleccionar uno o varios elementos HTML para aplicarles estilos. Estos selectores se escriben en el archivo CSS y se combinan con las propiedades y valores correspondientes para definir cómo se verán esos elementos en la página web.</p>
+
+            <h2 class="text-2xl font-bold text-center text-purple-800">Selectores comunes:</h2>
+
+            <div class="border border-gray-200 rounded-lg p-4">
+                <h3 class="text-xl font-bold text-purple-800">Selector de tipo</h3>
+                <p class="text-gray-700">Selecciona todos los elementos que coinciden con el nombre del elemento especificado. Por ejemplo, <code>input</code> se aplicará a cualquier elemento &lt;input&gt;.</p>
+            </div>
+
+            <div class="border border-gray-200 rounded-lg p-4 mt-4">
+                <h3 class="text-xl font-bold text-purple-800">Selector de clase</h3>
+                <p class="text-gray-700">Selecciona todos los elementos que tienen el atributo de clase especificado. Utiliza la sintaxis <code>.classname</code>. Por ejemplo, <code>.index</code> seleccionará cualquier elemento que tenga la clase "index".</p>
+            </div>
+
+            <div class="border border-gray-200 rounded-lg p-4 mt-4">
+                <h3 class="text-xl font-bold text-purple-800">Selector de ID</h3>
+                <p class="text-gray-700">Selecciona un elemento basándose en el valor de su atributo id. Utiliza la sintaxis <code>#idname</code>. Por ejemplo, <code>#toc</code> se aplicará a cualquier elemento que tenga el ID "toc".</p>
+            </div>
+
+            <div class="border border-gray-200 rounded-lg p-4 mt-4">
+                <h3 class="text-xl font-bold text-purple-800">Selector universal</h3>
+                <p class="text-gray-700">Selecciona todos los elementos. Puede estar restringido a un espacio de nombre específico o a todos los espacios de nombres. Utiliza la sintaxis <code>*</code>. Por ejemplo, <code>*</code> se aplicará a todos los elementos del documento.</p>
+            </div>
+
+            <div class="border border-gray-200 rounded-lg p-4 mt-4">
+                <h3 class="text-xl font-bold text-purple-800">Selector de atributo</h3>
+                <p class="text-gray-700">Selecciona elementos basándose en el valor de un atributo específico. Utiliza la sintaxis <code>[attr]</code>, <code>[attr=value]</code>, <code>[attr~=value]</code>, <code>[attr|=value]</code>, <code>[attr^=value]</code>, <code>[attr$=value]</code> o <code>[attr*=value]</code>. Por ejemplo, <code>[autoplay]</code> seleccionará todos los elementos que tengan el atributo “autoplay” establecido (a cualquier valor).</p>
+            </div>
+
+            <h2 class="text-2xl font-bold text-center text-purple-800 mt-8">Especificidad en CSS</h2>
+
+            <p class="text-xl text-gray-700">La especificidad en CSS se refiere a la prioridad con la que se aplican las reglas de estilo a los elementos. Es importante entenderla para resolver conflictos y asegurarse de que los estilos se apliquen correctamente.</p>
+
+            <div class="border border-gray-200 rounded-lg p-4 mt-4">
+                <h3 class="text-xl font-bold text-purple-800">Especificidad de selectores</h3>
+                <ul class="list-disc pl-8">
+                    <li>Cada selector tiene un valor de especificidad asociado.</li>
+                    <li>Los selectores más específicos tienen mayor prioridad.</li>
+                    <li>La especificidad se calcula sumando los valores de los componentes del selector: ID (100), Clase, atributo o pseudoclase (10), Elemento o pseudoelemento (1).</li>
+                </ul>
+            </div>
+
+            <div class="border border-gray-200 rounded-lg p-4 mt-4">
+                <h3 class="text-xl font-bold text-purple-800">Orden de aplicación</h3>
+                <ul class="list-disc pl-8">
+                    <li>Si hay conflictos entre reglas, se aplica la última regla encontrada.</li>
+                    <li>Las reglas en hojas de estilo externas se aplican antes que las reglas en hojas de estilo internas o en línea.</li>
+                </ul>
+            </div>
+
+            <div class="border border-gray-200 rounded-lg p-4 mt-4">
+                <h3 class="text-xl font-bold text-purple-800">Importancia</h3>
+                <ul class="list-disc pl-8">
+                    <li>Las reglas marcadas como <code>!important</code> tienen la máxima prioridad.</li>
+                    <li>Se debe usar <code>!important</code> con moderación, ya que puede dificultar el mantenimiento del código.</li>
+                </ul>
+            </div>
+
+            <div class="border border-gray-200 rounded-lg p-4 mt-4">
+                <h3 class="text-xl font-bold text-purple-800">Herencia</h3>
+                <ul class="list-disc pl-8">
+                    <li>Algunas propiedades se heredan de los elementos padre a los elementos hijos.</li>
+                    <li>Por ejemplo, la propiedad <code>color</code> se hereda, pero <code>background-color</code> no.</li>
+                </ul>
+            </div>
+
+            <div class="border border-gray-200 rounded-lg p-4 mt-4">
+                <h3 class="text-xl font-bold text-purple-800">Especificidad en cascada</h3>
+                <ul class="list-disc pl-8">
+                    <li>Si dos reglas tienen la misma especificidad, se aplica la última encontrada.</li>
+                    <li>Si dos reglas tienen la misma especificidad y están en la misma hoja de estilo, se aplica la que aparece más abajo en el código.</li>
+                </ul>
+            </div>
+
+            <a class="text-purple-800 text-3xl font-bold text-center hover:text-purple-400" href="/frontend/css/atributos">Atributos...</a>
+        </div>
+    </div>
+</Layout>

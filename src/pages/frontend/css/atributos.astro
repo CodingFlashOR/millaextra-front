@@ -1,0 +1,52 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title='Atributos en CSS'>
+    <div class="container mx-auto p-6">
+        <div class="md:w-1/2 p-2 m-auto flex flex-col gap-6">
+            <h1 class="text-3xl font-bold text-center text-purple-800 mb-10">Atributos en CSS</h1>
+
+            <p class="text-xl text-gray-700">Los atributos CSS son palabras especiales utilizadas dentro de la etiqueta de apertura para controlar el comportamiento del elemento, ya sea con HTML o en CSS. Estos atributos se utilizan para seleccionar elementos HTML basados en la existencia o el contenido de ciertos atributos.</p>
+
+            <h2 class="text-2xl font-bold text-center text-purple-800">Formas de utilizar los atributos CSS:</h2>
+
+            <div class="border border-gray-200 rounded-lg p-4">
+                <h3 class="text-xl font-bold text-purple-800">Atributo existente</h3>
+                <p class="text-gray-700">Puedes utilizar el atributo <code>[style]</code> para seleccionar todas las etiquetas HTML que contengan un atributo style para darles estilos en línea a un elemento.</p>
+                <pre class="mt-6"><code>[style] &#123
+  background: red;
+&#125</code></pre>
+            </div>
+
+            <div class="border border-gray-200 rounded-lg p-4 mt-2">
+                <h3 class="text-xl font-bold text-purple-800">Atributo con valor exacto</h3>
+                <p class="text-gray-700">Puedes indicar el valor exacto para seleccionar elementos utilizando el operador de igualdad <code>=</code>.</p>
+                <pre class="mt-6"><code>a[rel="nofollow"] &#123
+  background: red;
+&#125</code></pre>
+            </div>
+
+            <div class="border border-gray-200 rounded-lg p-4 mt-2">
+                <h3 class="text-xl font-bold text-purple-800">El atributo contiene texto</h3>
+                <p class="text-gray-700">Puedes seleccionar elementos cuyos atributos contengan un fragmento de texto utilizando el operador <code>*=</code>.</p>
+                <pre class="mt-6"><code>a[href*="manz"] &#123
+  background-color: orange;
+&#125</code></pre>
+            </div>
+
+            <div class="border border-gray-200 rounded-lg p-4 mt-2">
+                <h3 class="text-xl font-bold text-purple-800">Comienzo/final de los atributos</h3>
+                <p class="text-gray-700">Puedes seleccionar elementos dependiendo del texto con el que empieza o acaba en el valor de un atributo específico utilizando los operadores <code>^=</code> y <code>$=</code>.</p>
+                <pre class="mt-6"><code>a[href^="http://"]::after &#123
+  content: " (Página no segura): " attr(href);
+  display: inline-block;
+  color: #666;
+&#125</code></pre>
+            </div>
+            <a class="text-purple-800 text-3xl font-bold text-center hover:text-purple-400" href="/frontend/css/valores">Valores...</a>
+        </div>
+
+
+    </div>
+</Layout>
