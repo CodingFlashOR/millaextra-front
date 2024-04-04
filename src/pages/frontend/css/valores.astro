@@ -1,0 +1,55 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import 'tailwindcss/tailwind.css';
+---
+
+<Layout title='Valores en CSS'>
+    <div class="container mx-auto p-6">
+        <div class="md:w-1/2 p-2 m-auto flex flex-col gap-6">
+            <h1 class="text-3xl font-bold text-center text-purple-800 mb-10">Valores en CSS</h1>
+
+            <p class="text-xl text-gray-700">Los valores en CSS son fundamentales para definir el estilo visual de tus páginas web. Cada propiedad CSS tiene un conjunto específico de valores que admite.</p>
+
+            <h2 class="text-2xl font-bold text-center text-purple-800">Conceptos clave sobre valores y unidades en CSS:</h2>
+
+            <div class="border border-gray-200 rounded-lg p-4">
+                <h3 class="text-xl font-bold text-purple-800">Números, Longitudes y Porcentajes</h3>
+                <p class="text-gray-700">Los valores numéricos son comunes en CSS. Puedes usar números para especificar tamaños, opacidades, índices z, etc. Las longitudes se expresan en unidades como píxeles (px), centímetros (cm), porcentajes (%), etc.</p>
+                <pre class="mt-6"><code>.container &#123
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+&#125</code></pre>
+            </div>
+
+            <div class="border border-gray-200 rounded-lg p-4 mt-2">
+                <h3 class="text-xl font-bold text-purple-800">Colores</h3>
+                <p class="text-gray-700">Los valores de color pueden ser palabras clave (como black o red), valores hexadecimales (como #FFA500), o funciones (como rgb(255, 165, 0)).</p>
+                <pre class="mt-6"><code>.text-purple-800 &#123
+  color: #6B7280;
+&#125</code></pre>
+            </div>
+
+            <div class="border border-gray-200 rounded-lg p-4 mt-2">
+                <h3 class="text-xl font-bold text-purple-800">Variables CSS</h3>
+                <p class="text-gray-700">Introducidas con CSS3, las variables te permiten definir valores personalizados y reutilizables en una hoja de estilo.</p>
+                <pre class="mt-6"><code>:root &#123
+  --mi-color: red;
+&#125
+
+.text-red &#123
+  color: var(--mi-color);
+&#125</code></pre>
+            </div>
+
+            <div class="border border-gray-200 rounded-lg p-4 mt-2">
+                <h3 class="text-xl font-bold text-purple-800">Unidades de Medida</h3>
+                <p class="text-gray-700">Además de las longitudes, hay otras unidades como em, rem, vw, vh, etc. em y rem son unidades relativas al tamaño de fuente. vw y vh son relativas al ancho y alto de la ventana del navegador, respectivamente.</p>
+                <pre class="mt-6"><code>.text-xl &#123
+  font-size: 1.25rem;
+&#125</code></pre>
+            </div>
+            <a class="text-purple-800 text-3xl font-bold text-center hover:text-purple-400" href="/frontend/css/reglas-css">Reglas CSS...</a>
+        </div>
+    </div>
+</Layout>
