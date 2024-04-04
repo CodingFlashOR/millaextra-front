@@ -1,0 +1,160 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import 'tailwindcss/tailwind.css';
+---
+
+<Layout title='Reglas CSS'>
+    <div class="container mx-auto p-6">
+        <div class="md:w-1/2 p-2 m-auto flex flex-col gap-6">
+            <h1 class="text-3xl font-bold text-center text-purple-800 mb-10">Reglas CSS</h1>
+
+            <p class="text-xl text-gray-700">Las reglas CSS son fundamentales para definir el estilo y la apariencia de un documento HTML. Cada regla consta de dos partes: un selector, que indica qué elemento HTML se modificará, y una declaración, que define las características que se agregarán o cambiarán en ese elemento.</p>
+
+            <h2 class="text-2xl font-bold text-center text-purple-800">Conceptos clave sobre reglas CSS:</h2>
+
+            <div class="border border-gray-200 rounded-lg p-4">
+                <h3 class="text-xl font-bold text-purple-800">Estructura de una regla CSS</h3>
+                <p class="text-gray-700">Un ejemplo de regla CSS se ve así:</p>
+                <pre class="mt-6"><code>h1 &#123
+  color: blue;
+  font-size: 24px;
+&#125</code></pre>
+            </div>
+
+            <div class="border border-gray-200 rounded-lg p-4 mt-6">
+                <h3 class="text-xl font-bold text-purple-800">Reglas @ en CSS</h3>
+                <p class="text-gray-700">En CSS tenemos las denominadas «at-rules» (reglas precedidas del carácter @). Son un tipo de declaración especial que permite indicar comportamientos especiales en muchos contextos. Su sintaxis suele determinarse incluyendo una palabra clave que comienza por @ (como por ejemplo @media o @import) y dependiendo de la regla en cuestión, puede tener una sintaxis u otra:</p>
+                <pre class="mt-6"><code>/* Regla @import para importar estilos CSS de otro fichero */
+@import url("index.css");
+
+/* Media query para definir estilos de móvil */
+@media screen and (max-width: 640px) &#123
+  .page &#123
+    width: 100%;
+        &#125
+&#125</code></pre>
+                <p class="text-gray-700 mt-6">En general, se pueden colocar en cualquier parte de la hoja de estilos, tanto al principio, al medio como al final. Sin embargo, algunas reglas tienen ciertas restricciones. Por ejemplo, en el caso de la regla @import debe colocarse en las primeras líneas del fichero.</p>
+            </div>
+
+            <div class="border border-gray-200 rounded-lg p-4 mt-6">
+                <h3 class="text-xl font-bold text-purple-800">Tipos de reglas CSS</h3>
+                <p class="text-gray-700">A continuación, podemos encontrar las siguientes reglas de CSS. Cada una pertenece a temáticas diferentes:</p>
+                <table class="mt-6">
+                    <thead>
+                        <tr>
+                            <th class="text-purple-800 font-bold">Regla</th>
+                            <th class="text-purple-800 font-bold">Descripción</th>
+                            <th class="text-purple-800 font-bold">Enlace</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>@import</td>
+                            <td>Incluye una hoja de estilos externa, indicando su URL.</td>
+                            <td>Ver la regla @import</td>
+                        </tr>
+                        <tr>
+                            <td>@media</td>
+                            <td>Aplica estilos dependiendo de características de la pantalla (responsive).</td>
+                            <td>Ver Media Queries</td>
+                        </tr>
+                        <tr>
+                            <td>@container</td>
+                            <td>Aplica estilos dependiendo de un elemento contenedor.</td>
+                            <td>Ver Container Queries</td>
+                        </tr>
+                        <tr>
+                            <td>@page</td>
+                            <td>Modifica propiedades relacionadas con una página impresa.</td>
+                            <td>Ver Medios paginados</td>
+                        </tr>
+                        <tr>
+                            <td>@keyframes</td>
+                            <td>Crea los fotogramas clave de una animación.</td>
+                            <td>Ver regla @keyframes</td>
+                        </tr>
+                        <tr>
+                            <td>@scope</td>
+                            <td>Aplica estilos con un límite de ámbito en elementos descendientes.</td>
+                            <td>Ver regla @scope</td>
+                        </tr>
+                        <tr>
+                            <td>@layer</td>
+                            <td>Establece que estilos se incluirán en una capa (que se fusionará más tarde).</td>
+                            <td>Ver la regla @layer</td>
+                        </tr>
+                        <tr>
+                            <td>@property</td>
+                            <td>Indica el tipo de dato de una variable CSS, aplicando ciertas ventajas.</td>
+                            <td>Ver regla @property</td>
+                        </tr>
+                        <tr>
+                            <td>@font-face</td>
+                            <td>Indica una tipografía externa que el navegador debe descargar.</td>
+                            <td>Ver tipografías externas</td>
+                        </tr>
+                        <tr>
+                            <td>@font-feature-values</td>
+                            <td>Activa/desactiva características especiales en una tipografía</td>
+                            <td>Ver caract. personalizadas</td>
+                        </tr>
+                        <tr>
+                            <td>@font-palette-values</td>
+                            <td>Permite personalizar los valores por defecto de la propiedad font-palette.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>@supports</td>
+                            <td>Establece un bloque de estilos que se aplicará si se cumple la condición.</td>
+                            <td>Ver la regla @supports</td>
+                        </tr>
+                        <tr>
+                            <td>@when / @else</td>
+                            <td>Establece unos estilos si se cumple la condición y otros si no se cumple.</td>
+                            <td>⚠️ Aún sin soporte.</td>
+                        </tr>
+                        <tr>
+                            <td>@function</td>
+                            <td>Crea una función CSS que dada una entrada, produce una salida de CSS.</td>
+                            <td>⚠️ Aún sin soporte.</td>
+                        </tr>
+                        <tr>
+                            <td>@mixins / @apply</td>
+                            <td>Crea un grupo de propiedades CSS que se pueden aplicar o reutilizar.</td>
+                            <td>⚠️ Aún sin soporte.</td>
+                        </tr>
+                        <tr>
+                            <td>@counter-style</td>
+                            <td>Indica el estilo que se utilizará en los contadores CSS.</td>
+                            <td>Ver Contadores CSS</td>
+                        </tr>
+                        <tr>
+                            <td>@color-profile</td>
+                            <td>Define un perfil de color específico que podrá usarse con la función color().</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>@namespace</td>
+                            <td>Define un espacio de nombres XML para utilizar en CSS.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>@starting-style</td>
+                            <td>Define valores iniciales de un elemento al que aplicarás una transición CSS.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>@charset</td>
+                            <td>Indicaba la codificación de carácteres usada en el fichero .css actual.</td>
+                            <td>❌ Obsoleta. No existe.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Agrega más secciones aquí -->
+
+            <a class="text-purple-800 text-3xl font-bold text-center hover:text-purple-400" href="/frontend/css/valores-css">Valores en CSS...</a>
+        </div>
+    </div>
+</Layout>
