@@ -1,0 +1,77 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title='Declaraciones'>
+    <div class="container mx-auto p-6">
+        <div class="md:w-1/2 p-2 m-auto flex flex-col gap-6">
+            <div class="border border-gray-200 rounded-lg p-4">
+                <h1 class="text-3xl font-bold text-center text-purple-800 mb-10">Declaraciones de CSS</h1>
+    
+                <p class="text-gray-700">Las declaraciones en CSS son esenciales para dar estilo y formato a las páginas web. Permíteme profundizar en este tema.</p>
+                <h2 class="text-xl font-bold text-purple-800 mt-6">Sintaxis de una Declaración CSS:</h2>
+    
+                <p class="text-gray-700 mt-2">Una declaración en CSS consta de tres partes fundamentales:</p>
+                <ul class="list-disc text-gray-700 pl-6">
+                    <li>Selector: Define el elemento o conjunto de elementos a los cuales se aplicarán los estilos.</li>
+                    <li>Propiedad: Es el nombre del estilo de CSS que deseamos modificar.</li>
+                    <li>Valor: Representa cómo queremos que se vea la propiedad en cuestión.</li>
+                </ul>
+                <p class="text-gray-700 mt-6">Por ejemplo, consideremos la siguiente declaración:</p>
+
+                <pre class="text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded pt-6 px-5 h-auto"><code>p&#123
+      color: blue;
+      font-size: 16px;
+&#125
+
+</code></pre>
+
+                <p class="text-gray-700 mt-4">En este caso:</p>
+                <ul class="list-disc text-gray-700 pl-6 mt-2">
+                    <li>El selector es p, lo que significa que se aplicará a todos los párrafos en la página.</li>
+                    <li>La propiedad es color, y su valor es blue.</li>
+                    <li>También tenemos la propiedad font-size con un valor de 16px.</li>
+                </ul>
+    
+                <h2 class="text-xl font-bold text-purple-800 mt-6">Bloques de Declaraciones:</h2>
+                <p class="text-gray-700 mt-2">Las declaraciones se agrupan en bloques. Cada bloque está delimitado por llaves &#123&#125.</p>
+                <p class="text-gray-700 mt-2">Un bloque puede contener una o más declaraciones. Por ejemplo:</p>
+                <pre class="text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded pt-6 px-5 h-auto"><code>h1&#123
+      font-family: 'Arial', sans-serif;
+      font-weight: bold;
+      color: #333;
+&#125
+
+</code></pre>
+                <p class="text-gray-700 mt-4">Los bloques pueden anidarse, lo que significa que pueden contener otros bloques dentro de ellos.</p>
+    
+                <h2 class="text-xl font-bold text-purple-800 mt-6">Sensibilidad a Mayúsculas y Minúsculas:</h2>
+                <p class="text-gray-700 mt-2">Tanto las propiedades como los valores en CSS son sensibles a mayúsculas y minúsculas.</p>
+                
+                <h2 class="text-xl font-bold text-purple-800 mt-6">Sets de Reglas CSS:</h2>
+                <p class="text-gray-700 mt-2">El objetivo real de CSS es aplicar varias declaraciones a distintas partes del documento.</p>
+                <p class="text-gray-700">Esto se logra mediante sets de reglas CSS, que asocian condiciones con bloques de declaraciones.</p>
+                <p class="text-gray-700">Cada hoja de estilos puede aplicar múltiples declaraciones a diferentes elementos de la página.</p>
+    
+                <h2 class="text-xl font-bold text-purple-800 mt-6 ">Ejemplo Práctico:</h2>
+                <p class="text-gray-700 mt-2">Supongamos que deseamos aplicar un estilo a todos los enlaces (&lt;a&gt;) en nuestra página:</p>
+                <pre class="text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded pt-6 px-5 h-auto"><code>a&#123
+      text-decoration: none;
+      color: #0074D9;
+      transition: color 0.3s ease;
+&#125
+
+a:hover&#123
+      color: #FF4136;
+&#125
+
+</code></pre>
+                <p class="text-gray-700 mt-4">Aquí, hemos definido propiedades como text-decoration, color y transition. Cuando el usuario pasa el cursor sobre un enlace (:hover), el color cambia a rojo (#FF4136).</p>
+    
+                <p class="text-gray-700 mt-2">Las declaraciones en CSS permiten personalizar la apariencia de los elementos HTML. Son la base para crear diseños atractivos y coherentes en tus sitios web.</p>
+            </div>
+    
+            <a class="text-purple-800 text-3xl font-bold text-center hover:text-purple-400" href="/frontend/css/propiedades">Propiedades...</a>
+        </div>
+    </div>
+</Layout>
