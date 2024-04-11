@@ -1,0 +1,41 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title='Atributos en CSS'>
+    <div class="container mx-auto p-6">
+        <div class="md:w-1/2 p-2 m-auto flex flex-col gap-6">
+            <h1 class="text-3xl font-bold text-center text-purple-800 mb-10">Propiedades en CSS</h1>
+    
+            <p class="text-xl text-gray-700">Las <strong class="text-purple-800">propiedades CSS</strong> son los bloques de construcción fundamentales de las hojas de estilo en cascada (CSS). Son los atributos que se aplican a los elementos HTML para controlar su apariencia y diseño en una página web.</p>
+    
+            <h2 class="text-2xl font-bold text-center text-purple-800 mt-6">Sintaxis de las Propiedades CSS:</h2>
+            <p class="text-gray-700">Cada <strong class="text-purple-800">propiedad CSS</strong> tiene una sintaxis específica. Por lo general, una propiedad se escribe seguida de dos puntos (:) y luego de su valor. Por ejemplo, para establecer el color del texto, se utilizaría la propiedad <strong class="text-purple-800">color</strong> seguida del valor deseado, como <strong class="text-purple-800">color: blue;</strong>.</p>
+    
+            <h2 class="text-2xl font-bold text-center text-purple-800 mt-6">Aplicación de Propiedades CSS:</h2>
+            <p class="text-gray-700">Las <strong class="text-purple-800">propiedades CSS</strong> se pueden aplicar de varias maneras:</p>
+            <ul class="list-disc text-gray-700 pl-6">
+                <li><strong class="text-purple-800">Inline:</strong> Se aplican directamente a un elemento HTML utilizando el atributo <strong class="text-purple-800">style</strong>.</li>
+                <li><strong class="text-purple-800">Embedded:</strong> Se incluyen dentro de la sección &lt;style&gt; en la cabecera del documento HTML.</li>
+                <li><strong class="text-purple-800">External:</strong> Se almacenan en un archivo CSS separado y se enlazan al documento HTML utilizando la etiqueta &lt;link&gt;.</li>
+            </ul>
+    
+            <h2 class="text-2xl font-bold text-center text-purple-800 mt-6">Prioridad y Especificidad:</h2>
+            <p class="text-gray-700">Cuando múltiples reglas CSS se aplican a un mismo elemento, es importante entender cómo se resuelve la ambigüedad. Las propiedades definidas en reglas más específicas tienen prioridad sobre las definidas en reglas más generales. Además, la especificidad de una regla determina su peso en la cascada de estilos.</p>
+    
+            <h2 class="text-2xl font-bold text-center text-purple-800 mt-6">Herencia:</h2>
+            <p class="text-gray-700">Algunas propiedades CSS se heredan automáticamente de los elementos padre a los elementos hijos. Por ejemplo, si se establece el tamaño de fuente en el elemento &lt;body&gt;, los elementos secundarios heredarán este tamaño de fuente a menos que se anule explícitamente.</p>
+    
+            <h2 class="text-2xl font-bold text-center text-purple-800 mt-6">Unidades de Medida:</h2>
+            <p class="text-gray-700">Los valores de las propiedades CSS pueden expresarse en diferentes unidades de medida, como píxeles (px), porcentaje (%), puntos (pt), em (em), entre otros. Cada unidad tiene su propio significado y se elige según el contexto y los requisitos de diseño.</p>
+    
+            <h2 class="text-2xl font-bold text-center text-purple-800 mt-6">Propiedades Comunes:</h2>
+            <p class="text-gray-700">Existen numerosas propiedades CSS que se utilizan para controlar diferentes aspectos de un elemento HTML. Algunas de las propiedades más comunes incluyen <strong class="text-purple-800">color</strong>, <strong class="text-purple-800">font-size</strong>, <strong class="text-purple-800">margin</strong>, <strong class="text-purple-800">padding</strong>, <strong class="text-purple-800">background-color</strong>, <strong class="text-purple-800">border</strong>, <strong class="text-purple-800">display</strong>, <strong class="text-purple-800">position</strong>, entre otras.</p>
+    
+            <p class="text-gray-700 mt-6">En resumen, las propiedades CSS son los elementos básicos que permiten definir y controlar el aspecto visual de los elementos HTML en una página web. Al comprender cómo se utilizan estas propiedades en conjunto y cómo se aplican en diferentes contextos, se puede crear un diseño web efectivo y estéticamente atractivo.</p>
+    
+            <a class="text-purple-800 text-3xl font-bold text-center hover:text-purple-400" href="/frontend/css/valor-de-la-propiedad">Valores de las Propiedades...</a>
+        </div>
+    </div>
+
+</Layout>
