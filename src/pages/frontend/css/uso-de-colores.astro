@@ -1,0 +1,76 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title='Uso de Colores'>
+    <div class="container mx-auto p-6">
+        <div class="md:w-1/2 p-2 m-auto">
+            <h1 class="text-3xl font-bold text-center text-purple-800 mb-10">Uso de Colores en CSS: Consejos y Ejemplos</h1>
+    
+            <div class="border border-gray-200 rounded-lg p-4 mt-6">
+                <h2 class="text-xl font-bold text-purple-800">1. Cambiar el Color del Texto</h2>
+                <p class="text-gray-700 mt-4">Para modificar el color del texto, utilizamos la propiedad <strong class="text-purple-800">color</strong> en CSS. Esta propiedad acepta diferentes valores:</p>
+                <ul class="list-disc text-gray-700 pl-6 mt-2">
+                    <li>Nombres de Colores Predefinidos</li>
+                    <li>Códigos Hexadecimales</li>
+                    <li>Valores RGB</li>
+                </ul>
+                <p class="text-gray-700 mt-4"><strong class="text-purple-800">Ejemplo:</strong></p>
+                <pre class="text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded pt-6 px-5 h-auto mt-4">
+                    <code>
+h1 &#123
+  color: blue;
+&#125
+                    </code>
+                </pre>
+            </div>
+            
+            <div class="border border-gray-200 rounded-lg p-4 mt-6">
+                <h2 class="text-xl font-bold text-purple-800">2. Cambiar el Color de Fondo</h2>
+                <p class="text-gray-700 mt-4">Para modificar el color de fondo de un elemento, utilizamos la propiedad <strong class="text-purple-800">background-color</strong>. Al igual que con el texto, puedes usar nombres de colores, códigos hexadecimales o valores RGB.</p>
+                <p class="text-gray-700 mt-4"><strong class="text-purple-800">Ejemplo:</strong></p>
+                <pre class="text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded pt-6 px-5 h-auto mt-4">
+                    <code>
+body &#123
+  background-color: #d0e0f0; /* Azul claro */
+&#125
+                    </code>
+                </pre>
+            </div>
+            
+            <div class="border border-gray-200 rounded-lg p-4 mt-6">
+                <h2 class="text-xl font-bold text-purple-800">3. Transparencia y Opacidad</h2>
+                <p class="text-gray-700 mt-4">La propiedad <strong class="text-purple-800">opacity</strong> nos permite cambiar la opacidad de un elemento. Un valor de 0.5 hará que el elemento sea semitransparente.</p>
+            </div>
+            
+            <div class="border border-gray-200 rounded-lg p-4 mt-6">
+                <h2 class="text-xl font-bold text-purple-800">4. Gradientes de Color</h2>
+                <p class="text-gray-700 mt-4">Los gradientes son una forma avanzada de aplicar colores. Puedes crear gradientes lineales o radiales utilizando la propiedad <strong class="text-purple-800">background-image</strong>.</p>
+                <p class="text-gray-700 mt-4"><strong class="text-purple-800">Ejemplo de gradiente lineal:</strong></p>
+                <pre class="text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded pt-6 px-5 h-auto mt-4">
+                    <code>
+div &#123
+  background-image: linear-gradient(to right, #ff0000, #00ff00);
+&#125
+                    </code>
+                </pre>
+            </div>
+            
+            <div class="border border-gray-200 rounded-lg p-4 mt-6">
+                <h2 class="text-xl font-bold text-purple-800">5. Consejos para Elegir Colores</h2>
+                <ul class="list-disc text-gray-700 pl-6 mt-4">
+                    <li>Armonía Visual: Elige un color principal y utiliza variaciones del mismo en tu diseño.</li>
+                    <li>Psicología del Color: Cada color transmite emociones diferentes.</li>
+                </ul>
+            </div>
+            
+            <div class="border border-gray-200 rounded-lg p-4 mt-6">
+                <h2 class="text-xl font-bold text-purple-800">6. Experimenta y Prueba</h2>
+                <p class="text-gray-700 mt-4">No temas experimentar con diferentes combinaciones de colores hasta encontrar la que mejor se adapte a tus necesidades.</p>
+                <p class="text-gray-700 mt-4">Recuerda que la elección de colores afecta la experiencia del usuario y la legibilidad de tu sitio web. ¡Diviértete diseñando con colores en CSS!</p>
+            </div>
+            
+            <a class="text-purple-800 text-3xl font-bold text-center hover:text-purple-400 block mt-6" href="/frontend/css/fuentes-y-tipografia">Fuentes y tipografía...</a>
+        </div>
+    </div>
+</Layout>
