@@ -1,0 +1,167 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title='Valores de la Propiedades'>
+    <div class="container mx-auto p-6">
+        <div class="md:w-1/2 p-2 m-auto flex flex-col gap-6">
+            <h1 class="text-3xl font-bold text-center text-purple-800 mb-10">Valores de las Propiedades</h1>
+    
+            <p class="text-lg text-gray-700">Aquí tienes un resumen de algunos conceptos importantes sobre los valores de las propiedades CSS:</p>
+    
+            <h2 class="text-xl font-bold text-purple-800 mt-6">Selectores Básicos:</h2>
+            <p class="text-gray-700">Los <strong class="text-purple-800">selectores</strong> son patrones que especifican qué elementos HTML se verán afectados por las reglas CSS.</p>
+            <ul class="list-disc text-gray-700 pl-6">
+                <li>etiqueta: Selecciona todos los elementos de una etiqueta específica (por ejemplo, <strong class="text-purple-800">p</strong> para párrafos).</li>
+                <li>.class: Selecciona elementos con una clase específica (por ejemplo, <strong class="text-purple-800">.destacado</strong>).</li>
+                <li>#id: Selecciona el elemento con un ID específico (por ejemplo, <strong class="text-purple-800">#encabezado</strong>).</li>
+                <li>sel1 sel2: Selecciona los elementos sel2 dentro de los elementos sel1.</li>
+                <li>sel1 &gt; sel2: Selecciona los elementos sel2 que son hijos directos de los elementos sel1.</li>
+            </ul>
+    
+            <h2 class="text-xl font-bold text-purple-800 mt-6">Unidades de Medida:</h2>
+            <p class="text-gray-700">Las <strong class="text-purple-800">unidades de medida</strong> son esenciales para definir tamaños y distancias en CSS.</p>
+            <ul class="list-disc text-gray-700 pl-6">
+                <li>px: Píxeles (relativos al dispositivo).</li>
+                <li>em: Relativo al tamaño de la fuente del elemento (por ejemplo, 2em significa 2 veces el tamaño de la fuente actual).</li>
+                <li>%: Porcentaje (relativo al elemento padre).</li>
+                <li>vh y vw: Relativos al tamaño de la ventana gráfica del navegador.</li>
+            </ul>
+    
+            <h2 class="text-xl font-bold text-purple-800 mt-6">Colores Básicos:</h2>
+            <p class="text-gray-700">Algunos <strong class="text-purple-800">colores básicos</strong> y sus representaciones son:</p>
+            <ul class="list-disc text-gray-700 pl-6">
+                <li>Negro: #000000 o rgb(0, 0, 0).</li>
+                <li>Blanco: #ffffff o rgb(255, 255, 255).</li>
+                <li>Rojo: #ff0000 o rgb(255, 0, 0).</li>
+                <li>Azul: #0000ff o rgb(0, 0, 255).</li>
+                <li>Amarillo: #ffff00 o rgb(255, 255, 0).</li>
+            </ul>
+    
+            <h2 class="text-xl font-bold text-purple-800 mt-6">Color y Fondo:</h2>
+            <p class="text-gray-700">Algunas propiedades importantes relacionadas con el <strong class="text-purple-800">color y fondo</strong> son:</p>
+            <ul class="list-disc text-gray-700 pl-6">
+                <li><strong class="text-purple-800">color:</strong> Define el color del texto.</li>
+                <li><strong class="text-purple-800">background-color:</strong> Establece el color de fondo.</li>
+                <li><strong class="text-purple-800">background-image:</strong> Permite agregar una imagen de fondo.</li>
+                <li><strong class="text-purple-800">background-repeat:</strong> Controla la repetición de la imagen de fondo.</li>
+                <li><strong class="text-purple-800">background-attachment:</strong> Determina si la imagen de fondo se desplaza con el contenido.</li>
+            </ul>
+    
+            <h2 class="text-xl font-bold text-purple-800 mt-6">Texto y Fuente:</h2>
+            <p class="text-gray-700">Algunas propiedades importantes relacionadas con el <strong class="text-purple-800">texto y la fuente</strong> son:</p>
+            <ul class="list-disc text-gray-700 pl-6">
+                <li><strong class="text-purple-800">font-family:</strong> Define la fuente utilizada para el texto. Puedes especificar múltiples fuentes en orden de preferencia (por ejemplo, font-family: 'Arial', sans-serif;).</li>
+                <li><strong class="text-purple-800">font-size:</strong> Establece el tamaño del texto (por ejemplo, font-size: 16px;).</li>
+                <li><strong class="text-purple-800">font-weight:</strong> Controla el grosor del texto (por ejemplo, font-weight: bold;).</li>
+                <li><strong class="text-purple-800">font-style:</strong> Permite aplicar estilo cursivo o inclinado al texto (por ejemplo, font-style: italic;).</li>
+            </ul>
+    
+            <h2 class="text-xl font-bold text-purple-800 mt-6">Espaciado y Margen:</h2>
+            <p class="text-gray-700">Algunas propiedades importantes relacionadas con el <strong class="text-purple-800">espaciado y margen</strong> son:</p>
+            <ul class="list-disc text-gray-700 pl-6">
+                <li><strong class="text-purple-800">margin:</strong> Define el espacio alrededor del elemento (en sentido horario: arriba, derecha, abajo, izquierda).</li>
+                <li><strong class="text-purple-800">padding:</strong> Establece el espacio entre el contenido y el borde del elemento.</li>
+                <li><strong class="text-purple-800">line-height:</strong> Controla la altura de línea dentro del texto.</li>
+            </ul>
+    
+            <h2 class="text-xl font-bold text-purple-800 mt-6">Bordes y Esquinas:</h2>
+            <p class="text-gray-700">Algunas propiedades importantes relacionadas con los <strong class="text-purple-800">bordes y esquinas</strong> son:</p>
+            <ul class="list-disc text-gray-700 pl-6">
+                <li><strong class="text-purple-800">border:</strong> Crea un borde alrededor del elemento (por ejemplo, border: 1px solid #000;).</li>
+                <li><strong class="text-purple-800">border-radius:</strong> Redondea las esquinas del elemento (por ejemplo, border-radius: 5px;).</li>
+            </ul>
+    
+            <h2 class="text-xl font-bold text-purple-800 mt-6">Posicionamiento y Diseño:</h2>
+            <p class="text-gray-700">Algunas propiedades importantes relacionadas con el <strong class="text-purple-800">posicionamiento y diseño</strong> son:</p>
+            <ul class="list-disc text-gray-700 pl-6">
+                <li><strong class="text-purple-800">position:</strong> Define cómo se posiciona un elemento en relación con su contenedor.</li>
+                <li><strong class="text-purple-800">display:</strong> Controla el tipo de visualización del elemento (por ejemplo, display: block; o display: inline;).</li>
+                <li><strong class="text-purple-800">float:</strong> Permite que un elemento flote hacia la izquierda o la derecha.</li>
+            </ul>
+    
+            <h2 class="text-xl font-bold text-purple-800 mt-6">Animaciones y Transiciones:</h2>
+            <p class="text-gray-700">Algunas propiedades importantes relacionadas con las <strong class="text-purple-800">animaciones y transiciones</strong> son:</p>
+            <ul class="list-disc text-gray-700 pl-6">
+                <li><strong class="text-purple-800">animation:</strong> Crea animaciones (por ejemplo, animation: fade 2s infinite;).</li>
+                <li><strong class="text-purple-800">transition:</strong> Define transiciones suaves entre estados (por ejemplo, transition: background-color 0.3s ease;).</li>
+            </ul>
+
+            <h2 class="text-xl font-bold text-purple-800 mt-6">Flexbox y Grid:</h2>
+            <p class="text-gray-700">Flexbox (<strong class="text-purple-800">display: flex;</strong>): Permite crear diseños flexibles y alineados en una sola dimensión (fila o columna).</p>
+            <p class="text-gray-700"><strong class="text-purple-800">Propiedades clave:</strong></p>
+            <ul class="list-disc text-gray-700 pl-6">
+                <li><strong class="text-purple-800">flex-direction:</strong> Establece la dirección de los elementos flexibles (por ejemplo, row, column, row-reverse, column-reverse).</li>
+                <li><strong class="text-purple-800">justify-content:</strong> Controla la alineación horizontal de los elementos (por ejemplo, center, space-between, flex-start, flex-end).</li>
+                <li><strong class="text-purple-800">align-items:</strong> Alinea los elementos verticalmente (por ejemplo, center, stretch, flex-start, flex-end).</li>
+                <li><strong class="text-purple-800">flex-wrap:</strong> Define si los elementos deben envolverse en múltiples líneas.</li>
+            </ul>
+        
+            <p class="text-gray-700">Grid (<strong class="text-purple-800">display: grid;</strong>): Crea diseños bidimensionales con filas y columnas.</p>
+            <p class="text-gray-700"><strong class="text-purple-800">Propiedades clave:</strong></p>
+            <ul class="list-disc text-gray-700 pl-6">
+                <li><strong class="text-purple-800">grid-template-columns</strong> y <strong class="text-purple-800">grid-template-rows:</strong> Define el tamaño y la cantidad de columnas y filas.</li>
+                <li><strong class="text-purple-800">grid-gap:</strong> Establece el espacio entre las celdas.</li>
+                <li><strong class="text-purple-800">grid-column</strong> y <strong class="text-purple-800">grid-row:</strong> Controlan la ubicación de los elementos dentro de la cuadrícula.</li>
+            </ul>
+            
+            <h2 class="text-xl font-bold text-purple-800 mt-6">Pseudoclases y Pseudoelementos:</h2>
+            <p class="text-gray-700">Las pseudoclases y pseudoelementos permiten aplicar estilos específicos a ciertos estados o partes de un elemento.</p>
+            <p class="text-gray-700"><strong class="text-purple-800">Ejemplos:</strong></p>
+            <ul class="list-disc text-gray-700 pl-6">
+                <li><strong class="text-purple-800">:hover:</strong> Se aplica cuando el cursor está sobre el elemento.</li>
+                <li><strong class="text-purple-800">:active:</strong> Se aplica cuando el elemento está activo (por ejemplo, al hacer clic en un botón).</li>
+                <li><strong class="text-purple-800">::before</strong> y <strong class="text-purple-800">::after:</strong> Crea contenido antes o después del contenido real del elemento.</li>
+            </ul>
+            
+            <h2 class="text-xl font-bold text-purple-800 mt-6">Media Queries:</h2>
+            <p class="text-gray-700">Permite adaptar estilos según el tamaño de la pantalla o el dispositivo.</p>
+            <p class="text-gray-700"><strong class="text-purple-800">Ejemplo:</strong></p>
+            <pre class="text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded pt-6 px-5 h-auto">
+                <code>
+        @media (max-width: 768px) &#123
+            /* Estilos para pantallas pequeñas */
+            body &#123
+                font-size: 14px;
+            &#125
+        &#125
+                </code>
+            </pre>
+            
+            <h2 class="text-xl font-bold text-purple-800 mt-6">Variables CSS (Custom Properties):</h2>
+            <p class="text-gray-700">Define variables reutilizables en CSS.</p>
+            <p class="text-gray-700"><strong class="text-purple-800">Ejemplo:</strong></p>
+            <pre class="text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded pt-6 px-5 h-auto">
+                <code>
+        :root &#123
+            --color-primary: #007bff;
+        &#125
+        .boton &#123
+            background-color: var(--color-primary);
+        &#125
+                </code>
+            </pre>
+            
+            <h2 class="text-xl font-bold text-purple-800 mt-6">Transiciones y Animaciones Avanzadas:</h2>
+            <p class="text-gray-700">@keyframes: Define animaciones personalizadas.</p>
+            <p class="text-gray-700"><strong class="text-purple-800">Ejemplo:</strong></p>
+            <pre class="text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded pt-6 px-5 h-auto">
+                <code>
+        @keyframes fade-in &#123
+            from &#123
+                opacity: 0;
+            &#125
+            to &#123
+                opacity: 1;
+            &#125
+        &#125
+        .elemento &#123
+            animation: fade-in 1s ease-in-out;
+        &#125
+                </code>
+            </pre>
+    
+            <a class="text-purple-800 text-3xl font-bold text-center hover:text-purple-400" href="/frontend/css/uso-de-colores">Uso de colores...</a>
+        </div>
+    </div>
+</Layout>
