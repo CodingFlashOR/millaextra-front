@@ -1,0 +1,57 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title='Fuentes y Tipografía'>
+    <div class="container mx-auto p-6">
+        <div class="md:w-1/2 p-2 m-auto">
+            <h1 class="text-3xl font-bold text-center text-purple-800 mb-10">Propiedad font-family</h1>
+    
+            <div class="border border-gray-200 rounded-lg p-4 mt-6">
+                <p class="text-gray-700">La propiedad <strong class="text-purple-800">font-family</strong> te permite especificar la familia tipográfica que deseas utilizar en tu texto.</p>
+                <p class="text-gray-700 mt-4">Puedes indicar una fuente específica escribiendo su nombre, como en este ejemplo:</p>
+                <pre class="text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded pt-6 px-5 h-auto mt-4">
+                    <code>
+.container &#123
+  font-family: 'Verdana', 'PT Sans';
+&#125
+                    </code>
+                </pre>
+                <p class="text-gray-700 mt-4">Si el nombre de la fuente tiene varias palabras, se aconseja usar comillas simples para indicarla.</p>
+                <p class="text-gray-700 mt-4">Es importante tener en cuenta que los navegadores solo pueden mostrar fuentes que estén instaladas en el sistema o precargadas por el navegador. Si una fuente no está disponible, se utilizará una fuente “suplente” del sistema.</p>
+            </div>
+            
+            <div class="border border-gray-200 rounded-lg p-4 mt-6">
+                <p class="text-gray-700">Fuentes alternativas y seguras:</p>
+                <p class="text-gray-700 mt-4">Para mitigar el problema de disponibilidad de fuentes, es recomendable especificar una lista de fuentes alternativas separadas por comas:</p>
+                <pre class="text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded pt-6 px-5 h-auto mt-4">
+                    <code>
+.container &#123
+  font-family: 'Vegur', 'PT Sans', 'Verdana', sans-serif;
+&#125
+                    </code>
+                </pre>
+                <p class="text-gray-700 mt-4">De esta manera, el navegador buscará la fuente en orden y utilizará la primera que esté disponible.</p>
+                <p class="text-gray-700 mt-4">También puedes utilizar las llamadas “fuentes seguras” (web-safe fonts) como última opción. Estas son fuentes comunes que suelen estar disponibles en la mayoría de los sistemas.</p>
+            </div>
+            
+            <div class="border border-gray-200 rounded-lg p-4 mt-6">
+                <p class="text-gray-700">Otras propiedades relacionadas con tipografías:</p>
+                <ul class="list-disc text-gray-700 pl-6 mt-4">
+                    <li><strong class="text-purple-800">font-size:</strong> Define el tamaño de la fuente.</li>
+                    <li><strong class="text-purple-800">font-style:</strong> Indica el estilo de la fuente (normal, cursiva u oblicua).</li>
+                    <li><strong class="text-purple-800">font-weight:</strong> Establece el grosor de la fuente (valores entre 100 y 800).</li>
+                </ul>
+            </div>
+            
+            <div class="border border-gray-200 rounded-lg p-4 mt-6">
+                <p class="text-gray-700">Regla @font-face:</p>
+                <p class="text-gray-700 mt-4">La regla <strong class="text-purple-800">@font-face</strong> permite cargar fuentes personalizadas en el navegador.</p>
+                <p class="text-gray-700 mt-4">Es útil para utilizar fuentes que no están instaladas en el sistema o para evitar problemas de licencias.</p>
+                <p class="text-gray-700 mt-4">Google Fonts utiliza esta técnica para cargar fuentes en las páginas web.</p>
+            </div>
+            
+            <a class="text-purple-800 text-3xl font-bold text-center hover:text-purple-400 block mt-6" href="/frontend/css/posicionamiento">Posicionamiento...</a>
+        </div>
+    </div>
+</Layout>
