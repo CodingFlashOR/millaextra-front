@@ -1,0 +1,57 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title='Flexbox en CSS'>
+    <div class="container mx-auto p-6">
+        <div class="md:w-1/2 p-2 m-auto">
+            <h1 class="text-3xl font-bold text-center text-purple-800 mb-6">Flexbox en CSS</h1>
+    
+            <div class="border border-gray-200 rounded-lg p-4 mt-8">
+                <h2 class="text-xl font-bold text-purple-800 mb-4">¿Qué es Flexbox?</h2>
+                <p class="text-gray-700 leading-relaxed">Flexbox, también conocido como Flexible Box Layout, es un modelo de diseño unidimensional que te permite organizar elementos en filas o columnas. Su objetivo principal es distribuir el espacio disponible de manera eficiente y controlar la alineación de los elementos dentro de un contenedor. A diferencia de otros métodos de diseño, como floats o posicionamiento, Flexbox simplifica la creación de diseños responsivos sin necesidad de recurrir a trucos complicados.</p>
+            </div>
+            
+            <div class="border border-gray-200 rounded-lg p-4 mt-8">
+                <h2 class="text-xl font-bold text-purple-800 mb-4">Terminología básica</h2>
+                <p class="text-gray-700 leading-relaxed">Antes de sumergirnos en las propiedades específicas, es importante comprender algunos términos clave:</p>
+                <ul class="list-disc text-gray-700 pl-6 mt-2">
+                    <li><span class="font-bold text-purple-800">Contenedor flex (flex container):</span> Es el elemento que contiene los elementos flexibles. Se define mediante la propiedad <code>display: flex;</code> o <code>display: inline-flex;</code>.</li>
+                    <li><span class="font-bold text-purple-800">Elementos flexibles (flex items):</span> Son los hijos directos del contenedor flex. Estos elementos se organizan a lo largo del eje principal (principal axis) y pueden ser filas o columnas.</li>
+                </ul>
+            </div>
+            
+            <div class="border border-gray-200 rounded-lg p-4 mt-8">
+                <h2 class="text-xl font-bold text-purple-800 mb-4">Propiedades de Flexbox</h2>
+                <p class="text-gray-700 leading-relaxed">A continuación, describiré algunas de las propiedades más importantes relacionadas con Flexbox:</p>
+                <ul class="list-disc text-gray-700 pl-6 mt-2">
+                    <li><span class="font-bold text-purple-800">display:</span> Define si un elemento es un contenedor flex o un contenedor flex en línea.</li>
+                    <li><span class="font-bold text-purple-800">flex-direction:</span> Establece la dirección principal en la que se colocan los elementos flex.</li>
+                    <li><span class="font-bold text-purple-800">flex-wrap:</span> Controla si los elementos flex se ajustan en una sola línea o se envuelven en múltiples líneas.</li>
+                    <li><span class="font-bold text-purple-800">flex-flow:</span> Propiedad abreviada para flex-direction y flex-wrap.</li>
+                    <li><span class="font-bold text-purple-800">justify-content:</span> Controla la alineación a lo largo del eje principal.</li>
+                    <li><span class="font-bold text-purple-800">align-items:</span> Controla la alineación de los elementos a lo largo del eje secundario.</li>
+                    <li><span class="font-bold text-purple-800">align-content:</span> Alinea las líneas de los contenedores flex cuando hay espacio adicional en el eje secundario, similar a justify-content pero para el eje secundario.</li>
+                    <li><span class="font-bold text-purple-800">order:</span> Especifica el orden de los elementos flex dentro de su contenedor.</li>
+                    <li><span class="font-bold text-purple-800">flex-grow:</span> Define la capacidad de un elemento flexible para crecer si es necesario.</li>
+                    <li><span class="font-bold text-purple-800">flex-shrink:</span> Define la capacidad de un elemento flexible para reducirse si es necesario.</li>
+                    <li><span class="font-bold text-purple-800">flex-basis:</span> Establece el tamaño inicial de un elemento flexible antes de que comience a crecer o a reducirse.</li>
+                    <li><span class="font-bold text-purple-800">align-self:</span> Permite que un elemento flexible se alinee de forma diferente al resto de los elementos flex dentro del mismo contenedor.</li>
+                </ul>
+            </div>
+            
+            <div class="border border-gray-200 rounded-lg p-4 mt-8">
+                <h2 class="text-xl font-bold text-purple-800 mb-4">Ejes principales y secundarios</h2>
+                <p class="text-gray-700 leading-relaxed">En Flexbox, hay dos ejes clave:</p>
+                <ul class="list-disc text-gray-700 pl-6 mt-2">
+                    <li><span class="font-bold text-purple-800">Eje principal (main axis):</span> Es la dirección en la que se alinean los elementos flex dentro del contenedor.</li>
+                    <li><span class="font-bold text-purple-800">Eje secundario (cross axis):</span> Es perpendicular al eje principal y afecta la alineación de los elementos en la dirección opuesta.</li>
+                </ul>
+            </div>
+
+            <p class="text-gray-700 text-lg mt-8">Flexbox es una herramienta poderosa para crear diseños flexibles y responsivos en CSS. Si tienes más preguntas, no dudes en preguntar.</p>
+            
+            <a class="text-purple-800 text-3xl font-bold text-center hover:text-purple-400 block mt-8" href="/frontend/css/grid">Grid...</a>
+        </div>
+    </div>
+</Layout>
