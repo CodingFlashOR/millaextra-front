@@ -1,0 +1,87 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title='Transiciones y Animaciones en CSS'>
+    <div class="container mx-auto p-6">
+        <div class="md:w-1/2 p-2 m-auto">
+            <h1 class="text-3xl font-bold text-center text-purple-800 mb-6">Transiciones y Animaciones en CSS</h1>
+    
+            <div class="border border-gray-200 rounded-lg p-4 mt-8">
+                <h2 class="text-xl font-bold text-purple-800 mb-4">Transiciones en CSS</h2>
+                <p class="text-gray-700 leading-relaxed">Las transiciones en CSS te permiten suavizar los cambios de propiedades de un elemento a lo largo del tiempo. Puedes especificar una propiedad CSS que deseas cambiar, la duración de la transición y la función de tiempo que controla cómo se realiza la transición.</p>
+            </div>
+            
+            <div class="border border-gray-200 rounded-lg p-4 mt-8">
+                <h2 class="text-xl font-bold text-purple-800 mb-4">Propiedades de transición</h2>
+                <p class="text-gray-700 leading-relaxed">Puedes aplicar una transición a cualquier propiedad CSS. Algunas propiedades comunes para transiciones incluyen background-color, width, height, opacity, transform, entre otras.</p>
+            </div>
+            
+            <div class="border border-gray-200 rounded-lg p-4 mt-8">
+                <h2 class="text-xl font-bold text-purple-800 mb-4">Duración de la transición</h2>
+                <p class="text-gray-700 leading-relaxed">La duración de la transición se especifica utilizando la propiedad transition-duration y se mide en segundos (s) o milisegundos (ms). Por ejemplo, puedes establecer transition-duration: 0.5s para una transición de medio segundo.</p>
+            </div>
+            
+            <div class="border border-gray-200 rounded-lg p-4 mt-8">
+                <h2 class="text-xl font-bold text-purple-800 mb-4">Funciones de tiempo (Timing Functions)</h2>
+                <p class="text-gray-700 leading-relaxed">Las funciones de tiempo controlan cómo se realiza la transición a lo largo del tiempo. Algunas funciones de tiempo comunes son ease (predeterminada), linear, ease-in, ease-out, ease-in-out y cubic-bezier(). Puedes utilizar la función cubic-bezier() para crear tus propias funciones de tiempo personalizadas.</p>
+            </div>
+            
+            <div class="border border-gray-200 rounded-lg p-4 mt-8">
+                <h2 class="text-xl font-bold text-purple-800 mb-4">Propiedad de transición abreviada</h2>
+                <p class="text-gray-700 leading-relaxed">También puedes utilizar la propiedad abreviada transition para definir todas las propiedades de transición en una sola línea. Por ejemplo, transition: width 1s ease-in-out.</p>
+            </div>
+            
+            <div class="border border-gray-200 rounded-lg p-4 mt-8">
+                <h2 class="text-xl font-bold text-purple-800 mb-4">Transiciones en eventos</h2>
+                <p class="text-gray-700 leading-relaxed">Puedes activar las transiciones en respuesta a eventos, como :hover, :focus, :active, :checked, entre otros. Esto permite que los elementos cambien su apariencia de manera suave y animada cuando ocurren estos eventos.</p>
+            </div>
+
+            <h1 class="text-3xl font-bold text-center text-purple-800 mb-6 mt-12">Animaciones en CSS</h1>
+    
+            <div class="border border-gray-200 rounded-lg p-4 mt-8">
+                <h2 class="text-xl font-bold text-purple-800 mb-4">Animaciones en CSS</h2>
+                <p class="text-gray-700 leading-relaxed">Las animaciones en CSS te permiten crear efectos más complejos y controlados en elementos. Puedes definir una serie de estados clave (keyframes) y especificar cómo los estilos del elemento cambian en cada estado.</p>
+            </div>
+            
+            <div class="border border-gray-200 rounded-lg p-4 mt-8">
+                <h2 class="text-xl font-bold text-purple-800 mb-4">Keyframes (Estados clave)</h2>
+                <p class="text-gray-700 leading-relaxed">Los estados clave definen los diferentes puntos en una animación donde ocurren cambios en los estilos del elemento. Puedes definir varios estados clave utilizando la regla @keyframes.</p>
+            </div>
+            
+            <div class="border border-gray-200 rounded-lg p-4 mt-8">
+                <h2 class="text-xl font-bold text-purple-800 mb-4">Propiedades de animación</h2>
+                <p class="text-gray-700 leading-relaxed">Al igual que con las transiciones, puedes animar diferentes propiedades CSS en una animación. Puedes utilizar propiedades como animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, animation-fill-mode y animation-play-state para controlar el comportamiento de la animación.</p>
+            </div>
+            
+            <div class="border border-gray-200 rounded-lg p-4 mt-8">
+                <h2 class="text-xl font-bold text-purple-800 mb-4">Iteración y bucle</h2>
+                <p class="text-gray-700 leading-relaxed">Puedes especificar cuántas veces se repite una animación utilizando la propiedad animation-iteration-count. Puedes establecer un número finito o infinite para que la animación se repita indefinidamente. Además, la propiedad animation-direction controla si la animación se reproduce hacia adelante, hacia atrás o en ambos sentidos.</p>
+            </div>
+            
+            <div class="border border-gray-200 rounded-lg p-4 mt-8">
+                <h2 class="text-xl font-bold text-purple-800 mb-4">Retraso y duración</h2>
+                <p class="text-gray-700 leading-relaxed">Puedes establecer un retardo antes de que comience la animación utilizando la propiedad animation-delay. La duración de la animación se especifica con la propiedad animation-duration.</p>
+            </div>
+            
+            <div class="border border-gray-200 rounded-lg p-4 mt-8">
+                <h2 class="text-xl font-bold text-purple-800 mb-4">Secuencias de animación</h2>
+                <p class="text-gray-700 leading-relaxed">Puedes encadenar múltiples animaciones aplicando diferentes estados clave (@keyframes) a una animación. Esto te permite crear animaciones más complejas y fluidas.</p>
+            </div>
+            
+            <div class="border border-gray-200 rounded-lg p-4 mt-8">
+                <h2 class="text-xl font-bold text-purple-800 mb-4">Control de la animación</h2>
+                <p class="text-gray-700 leading-relaxed">Puedes pausar, reanudar o detener una animación utilizando la propiedad animation-play-state. También puedes modificar la velocidad de la animación utilizando la propiedad animation-timing-function.</p>
+            </div>
+            
+            <div class="border border-gray-200 rounded-lg p-4 mt-8">
+                <h2 class="text-xl font-bold text-purple-800 mb-4">Propiedad de animación abreviada</h2>
+                <p class="text-gray-700 leading-relaxed">Al igual que con las transiciones, puedes utilizar la propiedad abreviada animation para definir todas las propiedades de animación en una sola línea.</p>
+            </div>
+
+            <p class="text-gray-700 text-lg mt-8">Estos son los aspectos fundamentales de las animaciones y transiciones en CSS. Sin embargo, hay muchas más propiedades y características disponibles para crear efectos visuales impresionantes y animaciones complejas. Te recomendaría explorar ejemplos prácticos y recursos adicionales para profundizar en el tema y descubrir nuevas técnicas de animación en CSS.</p>
+            
+            <a class="text-purple-800 text-3xl font-bold text-center hover:text-purple-400 block mt-8" href="/frontend/css/media-queries">Media Queries...</a>
+        </div>
+    </div>
+</Layout>
