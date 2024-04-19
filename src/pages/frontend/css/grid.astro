@@ -1,0 +1,69 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title='CSS Grid'>
+    <div class="container mx-auto p-6">
+        <div class="md:w-1/2 p-2 m-auto">
+            <h1 class="text-3xl font-bold text-center text-purple-800 mb-6">CSS Grid</h1>
+    
+            <div class="border border-gray-200 rounded-lg p-4 mt-8">
+                <h2 class="text-xl font-bold text-purple-800 mb-4">Contenedor de Cuadrícula</h2>
+                <p class="text-gray-700 leading-relaxed">El contenedor de cuadrícula es un elemento HTML que envuelve a los elementos secundarios y se convierte en una cuadrícula estableciendo la propiedad <code>display: grid;</code> o <code>display: inline-grid;</code>. Puedes utilizar <code>display: inline-grid;</code> si deseas que el contenedor se muestre como un elemento en línea.</p>
+            </div>
+            
+            <div class="border border-gray-200 rounded-lg p-4 mt-8">
+                <h2 class="text-xl font-bold text-purple-800 mb-4">Ejes de la Cuadrícula</h2>
+                <p class="text-gray-700 leading-relaxed">CSS Grid tiene dos ejes principales:</p>
+                <ul class="list-disc text-gray-700 pl-6 mt-2">
+                    <li><span class="font-bold text-purple-800">Eje de Filas (Row Axis):</span> Se extiende verticalmente.</li>
+                    <li><span class="font-bold text-purple-800">Eje de Columnas (Column Axis):</span> Se extiende horizontalmente.</li>
+                </ul>
+            </div>
+            
+            <div class="border border-gray-200 rounded-lg p-4 mt-8">
+                <h2 class="text-xl font-bold text-purple-800 mb-4">Líneas de Cuadrícula</h2>
+                <p class="text-gray-700 leading-relaxed">Las líneas de cuadrícula dividen el contenedor de cuadrícula en filas y columnas. Hay líneas de cuadrícula horizontales (líneas de fila) y líneas de cuadrícula verticales (líneas de columna). Puedes especificar estas líneas mediante las propiedades <code>grid-template-rows</code> y <code>grid-template-columns</code>, respectivamente.</p>
+            </div>
+
+            <div class="border border-gray-200 rounded-lg p-4 mt-8">
+                <h2 class="text-xl font-bold text-purple-800 mb-4">Unidades de Medida de Cuadrícula</h2>
+                <p class="text-gray-700 leading-relaxed">Puedes utilizar diferentes unidades de medida para especificar el tamaño de las filas y columnas de la cuadrícula. Algunas unidades comunes son: píxeles (px), porcentaje (%), fracciones (fr), unidades automáticas (auto), contenido ajustado (min-content, max-content) y unidades de espacio disponible (minmax()).</p>
+            </div>
+
+            <div class="border border-gray-200 rounded-lg p-4 mt-8">
+                <h2 class="text-xl font-bold text-purple-800 mb-4">Posicionamiento de Elementos Secundarios</h2>
+                <p class="text-gray-700 leading-relaxed">Puedes posicionar elementos secundarios dentro de la cuadrícula utilizando propiedades como <code>grid-row-start</code>, <code>grid-row-end</code>, <code>grid-column-start</code> y <code>grid-column-end</code>. Estas propiedades definen en qué líneas de cuadrícula comienzan y terminan los elementos secundarios.</p>
+            </div>
+
+            <div class="border border-gray-200 rounded-lg p-4 mt-8">
+                <h2 class="text-xl font-bold text-purple-800 mb-4">Áreas de Cuadrícula</h2>
+                <p class="text-gray-700 leading-relaxed">Las áreas de cuadrícula son regiones rectangulares dentro del contenedor de cuadrícula que agrupan celdas de cuadrícula. Puedes definir áreas de cuadrícula utilizando la propiedad <code>grid-template-areas</code>, donde asignas nombres a las áreas y especificas la disposición de las celdas.</p>
+            </div>
+
+            <div class="border border-gray-200 rounded-lg p-4 mt-8">
+                <h2 class="text-xl font-bold text-purple-800 mb-4">Superposición de Elementos</h2>
+                <p class="text-gray-700 leading-relaxed">CSS Grid permite que los elementos secundarios se superpongan entre sí en la cuadrícula. Puedes controlar el orden de apilamiento utilizando la propiedad <code>z-index</code> en combinación con el posicionamiento de elementos.</p>
+            </div>
+
+            <div class="border border-gray-200 rounded-lg p-4 mt-8">
+                <h2 class="text-xl font-bold text-purple-800 mb-4">Alineación de Elementos</h2>
+                <p class="text-gray-700 leading-relaxed">Puedes alinear los elementos secundarios dentro de las celdas de cuadrícula utilizando propiedades como <code>justify-self</code> y <code>align-self</code>. <code>justify-self</code> controla la alineación horizontal y <code>align-self</code> controla la alineación vertical.</p>
+            </div>
+
+            <div class="border border-gray-200 rounded-lg p-4 mt-8">
+                <h2 class="text-xl font-bold text-purple-800 mb-4">Espaciado de Cuadrícula</h2>
+                <p class="text-gray-700 leading-relaxed">Puedes establecer espacios entre las filas y columnas de la cuadrícula utilizando propiedades como <code>grid-row-gap</code>, <code>grid-column-gap</code> y <code>grid-gap</code>. Estas propiedades definen el espacio entre las líneas de cuadrícula y entre las celdas de cuadrícula.</p>
+            </div>
+
+            <div class="border border-gray-200 rounded-lg p-4 mt-8">
+                <h2 class="text-xl font-bold text-purple-800 mb-4">Diseños Responsivos</h2>
+                <p class="text-gray-700 leading-relaxed">CSS Grid es especialmente útil para crear diseños responsivos. Puedes utilizar características como los medios de consulta (media queries) y el cambio de tamaño automático de columnas y filas (<code>auto-fit</code> y <code>auto-fill</code>) para adaptar el diseño de la cuadrícula a diferentes tamaños de pantalla.</p>
+            </div>
+
+            <p class="text-gray-700 text-lg mt-8">¡Estos son los conceptos clave de CSS Grid! Dominar estos temas te permitirá crear diseños complejos y flexibles en la web. Recuerda que la práctica y la experimentación son fundamentales para comprender completamente las capacidades de CSS Grid.</p>
+            
+            <a class="text-purple-800 text-3xl font-bold text-center hover:text-purple-400 block mt-8" href="/frontend/css/animaciones-y-transiciones">Animaciones y Transiciones...</a>
+        </div>
+    </div>
+</Layout>
