@@ -1,0 +1,45 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title='Media Queries en CSS'>
+    <div class="container mx-auto p-6">
+        <div class="md:w-1/2 p-2 m-auto">
+            <h1 class="text-3xl font-bold text-center text-purple-800 mb-6">Media Queries en CSS</h1>
+    
+            <div class="border border-gray-200 rounded-lg p-4 mt-8">
+                <h2 class="text-xl font-bold text-purple-800 mb-4">¿Qué son las Media Queries?</h2>
+                <p class="text-gray-700 leading-relaxed">Las Media Queries en CSS son una herramienta poderosa para adaptar el diseño de tus páginas web según las características del dispositivo en el que se visualizan. Permiten aplicar estilos de manera condicional según el tipo general de un dispositivo o características específicas, como la resolución de la pantalla o el ancho del viewport del navegador.</p>
+                <p class="text-gray-700 leading-relaxed">Se utilizan para:</p>
+                <ul class="list-disc text-gray-700 pl-6 mt-2">
+                    <li>Aplicar estilos condicionalmente mediante las reglas @media e @import.</li>
+                    <li>Segmentar medios específicos para elementos HTML como &lt;style&gt;, &lt;link&gt;, &lt;source&gt; y otros con el atributo media=.</li>
+                    <li>Probar y monitorear los estados de los medios utilizando los métodos Window.matchMedia() y EventTarget.addEventListener().</li>
+                </ul>
+            </div>
+            
+            <div class="border border-gray-200 rounded-lg p-4 mt-8">
+                <h2 class="text-xl font-bold text-purple-800 mb-4">Sintaxis Básica de las Media Queries</h2>
+                <p class="text-gray-700 leading-relaxed">Una media query se compone de un tipo de medio opcional y expresiones de características de medios. Los tipos de medios definen la amplia categoría de dispositivos para los que se aplica la consulta de medios, como all, print o screen. Las características de medios describen propiedades específicas del dispositivo, como width, height, orientation, color, entre otras. Las expresiones de características de medios se verifican para determinar si se cumplen o no. Puedes combinar múltiples media queries en una sola regla separándolas con comas.</p>
+                <p class="text-gray-700 leading-relaxed">Ejemplo de media query:</p>
+                <pre class="bg-gray-100 p-4 mt-2">
+@media (max-width: 600px) &#123
+  /* Estilos para pantallas pequeñas */
+  body &#123
+    font-size: 16px;
+    &#125
+&#125</pre>
+                <p class="text-gray-700 leading-relaxed">En este ejemplo, los estilos dentro de la regla @media se aplicarán solo cuando la pantalla tenga un ancho máximo de 600 píxeles.</p>
+            </div>
+            
+            <div class="border border-gray-200 rounded-lg p-4 mt-8">
+                <h2 class="text-xl font-bold text-purple-800 mb-4">Prioridad de Descarga de Hojas de Estilo con Media Queries</h2>
+                <p class="text-gray-700 leading-relaxed">Una hoja de estilo con una media query adjunta a su etiqueta &lt;link&gt; se descargará incluso si la consulta devuelve false. Sin embargo, su contenido no se aplicará hasta que el resultado de la consulta cambie a true.</p>
+            </div>
+
+            <p class="text-gray-700 text-lg mt-8">Las Media Queries en CSS son fundamentales para crear páginas web adaptables y responsivas. Con un buen entendimiento de su sintaxis y aplicaciones, puedes diseñar sitios que se vean bien en una variedad de dispositivos y tamaños de pantalla.</p>
+            
+            <a class="text-purple-800 text-3xl font-bold text-center hover:text-purple-400 block mt-8" href="/frontend/css/pseudo-clases-y-pseudo-elementos">Pseudo-clases y pseudo-elementos...</a>
+        </div>
+    </div>
+</Layout>
