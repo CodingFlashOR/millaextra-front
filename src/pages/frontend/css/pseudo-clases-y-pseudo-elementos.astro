@@ -1,0 +1,55 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title='Pseudoclases y Pseudoelementos en CSS'>
+    <div class="container mx-auto p-6">
+        <div class="md:w-1/2 p-2 m-auto">
+            <h1 class="text-3xl font-bold text-center text-purple-800 mb-6">Pseudoclases y Pseudoelementos en CSS</h1>
+    
+            <div class="border border-gray-200 rounded-lg p-4 mt-8">
+                <h2 class="text-xl font-bold text-purple-800 mb-4">Pseudoclases</h2>
+                <p class="text-gray-700 leading-relaxed">Una pseudoclase es un selector que marca los elementos en un estado específico. Estas pseudoclases nos permiten aplicar estilos según ciertas condiciones o interacciones del usuario.</p>
+                <p class="text-gray-700 leading-relaxed">Algunos ejemplos comunes de pseudoclases son:</p>
+                <ul class="list-disc text-gray-700 pl-6 mt-2">
+                    <li>:hover: Se aplica cuando el cursor está sobre un elemento.</li>
+                    <li>:active: Se activa cuando el usuario hace clic en un elemento.</li>
+                    <li>:visited: Se aplica a enlaces visitados.</li>
+                    <li>:focus: Se activa cuando un elemento obtiene el foco (por ejemplo, al hacer clic en un campo de entrada).</li>
+                </ul>
+                <p class="text-gray-700 leading-relaxed">Las pseudoclases son útiles para reducir la necesidad de clases adicionales y proporcionar un marcado más flexible y fácil de mantener.</p>
+                <p class="text-gray-700 leading-relaxed">Ejemplo de pseudoclase:</p>
+                <pre class="bg-gray-100 p-4 mt-2">
+article p:first-child &#123
+  font-size: 18px;
+  font-weight: bold;
+&#125</pre>
+                <p class="text-gray-700 leading-relaxed">En este ejemplo, los estilos se aplicarán automáticamente al primer párrafo de un artículo sin necesidad de agregar una clase específica.</p>
+            </div>
+            
+            <div class="border border-gray-200 rounded-lg p-4 mt-8">
+                <h2 class="text-xl font-bold text-purple-800 mb-4">Pseudoelementos</h2>
+                <p class="text-gray-700 leading-relaxed">Los pseudoelementos nos permiten seleccionar y estilizar partes específicas de un elemento. A diferencia de las pseudoclases, no identifican un estado, sino puntos o lugares dentro del elemento.</p>
+                <p class="text-gray-700 leading-relaxed">Algunos pseudoelementos comunes son:</p>
+                <ul class="list-disc text-gray-700 pl-6 mt-2">
+                    <li>::before: Inserta contenido antes del contenido del elemento.</li>
+                    <li>::after: Inserta contenido después del contenido del elemento.</li>
+                    <li>::first-line: Selecciona la primera línea de texto dentro de un elemento.</li>
+                    <li>::selection: Estiliza el texto seleccionado por el usuario.</li>
+                </ul>
+                <p class="text-gray-700 leading-relaxed">Estos pseudoelementos son útiles para crear efectos decorativos, como añadir iconos o líneas antes o después de un elemento.</p>
+                <p class="text-gray-700 leading-relaxed">Ejemplo de pseudoelemento:</p>
+                <pre class="bg-gray-100 p-4 mt-2">
+ul li::before &#123
+  content: "\2192"; /* Código Unicode para 
+  la flecha derecha */
+  margin-right: 5px;
+&#125</pre>
+            </div>
+
+            <p class="text-gray-700 text-lg mt-8">Las pseudoclases y pseudoelementos en CSS proporcionan una gran flexibilidad y precisión al aplicar estilos a los elementos HTML. Con su ayuda, puedes crear diseños más dinámicos y atractivos para tus usuarios.</p>
+            
+            <a class="text-purple-800 text-3xl font-bold text-center hover:text-purple-400 block mt-8" href="/frontend/css/media-queries">Media Queries...</a>
+        </div>
+    </div>
+</Layout>
