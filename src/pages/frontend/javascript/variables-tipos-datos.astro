@@ -1,0 +1,92 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title='Variables'>
+    <div class="md:w-1/2 m-auto flex flex-col gap-6 container mx-auto p-6">
+        <h1 class="text-3xl font-bold text-center text-purple-800">Variables y tipos de datos en javascript</h1>
+        <h2 class="text-2xl font-bold text-center text-purple-800">¿Qué es una Variable?</h2>
+        <p class="text-xl text-center text-gray-700">
+            <span class="text-purple-800 font-bold">Variable:</span> En programación, una variable es un contenedor que almacena un valor. Puedes pensar en ella como una caja etiquetada donde puedes guardar diferentes tipos de información, como números, texto o incluso objetos más complejos. Las variables son fundamentales para escribir código dinámico y flexible.
+        </p>
+        <h2 class="text-2xl font-bold text-center text-purple-800">¿Qué es una Constante?</h2>
+        <p class="text-xl text-center text-gray-700">
+            <span class="text-purple-800 font-bold">Constante:</span> Una constante es similar a una variable, pero con una diferencia importante: su valor no cambia una vez que se le asigna. Es decir, es inmutable. Las constantes se utilizan para representar valores fijos que no deben modificarse durante la ejecución del programa.
+        </p>
+        <h2 class="text-2xl font-bold text-center text-purple-800">Tipos de variables en JS:</h2>
+        
+        <h4 class="text-purple-800 font-bold text-xl">VAR:</h4>
+        <ul class="list-disc ml-6 text-gray-700">
+            <li>
+                <p class="font-medium text-purple-800">Ámbito:</p>
+                <ul class="list-disc ml-4">
+                    <li>Las variables declaradas con <span class="font-mono">var</span> tienen un ámbito global si se definen fuera de una función.</li>
+                    <li>Si se declaran dentro de una función, su ámbito es local y solo están disponibles dentro de esa función.</li>
+                </ul>
+            </li>
+            <li>
+                <p class="font-medium text-purple-800">Reasignación:</p>
+                <ul class="list-disc ml-4">
+                    <li>Las variables con <span class="font-mono">var</span> pueden ser redeclaradas y modificadas dentro del mismo ámbito sin errores.</li>
+                </ul>
+            </li>
+            <li>
+                <p class="font-medium text-purple-800">Hoisting:</p>
+                <ul class="list-disc ml-4">
+                    <li>Las declaraciones con <span class="font-mono">var</span> se mueven al principio de su ámbito antes de la ejecución del código.</li>
+                    <li>Esto significa que puedes usar una variable <span class="font-mono">var</span> antes de declararla, pero su valor será <span class="font-mono">undefined</span>.</li>
+                </ul>
+            </li>
+        </ul>
+        
+                
+        <h4 class="text-purple-800 font-bold text-xl">LET:</h4>
+        <ul class="list-disc ml-6 text-gray-700">
+            <li>
+                <p class="font-medium text-purple-800">Ámbito:</p>
+                <ul class="list-disc ml-4">
+                    <li>Las variables declaradas con <span class="font-mono">let</span> también tienen un ámbito local (bloque) cuando se definen dentro de una función o un bloque de código.</li>
+                    <li>No están disponibles fuera de ese ámbito.</li>
+                </ul>
+            </li>
+            <li>
+                <p class="font-medium text-purple-800">Reasignación:</p>
+                <ul class="list-disc ml-4">
+                    <li>Puedes reasignar valores a una variable let, pero no puedes redeclararla dentro del mismo ámbito.</li>
+                </ul>
+            </li>
+            <li>
+                <p class="font-medium text-purple-800">Hoisting:</p>
+                <ul class="list-disc ml-4">
+                    <li>A diferencia de var, las variables let no se “elevan” al principio del ámbito. Debes declararlas antes de usarlas.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h4 class="text-purple-800 font-bold text-xl">CONST:</h4>
+        <ul class="list-disc ml-6 text-gray-700">
+            <li>
+                <p class="font-medium text-purple-800">Ámbito:</p>
+                <ul class="list-disc ml-4">
+                    <li>Al igual que let, las variables const también tienen un ámbito local (bloque).
+                        Reasignación</li>
+                </ul>
+            </li>
+            <li>
+                <p class="font-medium text-purple-800">Reasignación:</p>
+                <ul class="list-disc ml-4">
+                    <li>No puedes reasignar valores a una variable const después de su declaración inicial. Sin embargo, ten en cuenta que no significa que su valor sea inmutable (por ejemplo, si es un objeto, sus propiedades pueden cambiar).</li>
+                </ul>
+            </li>
+            <li>
+                <p class="font-medium text-purple-800">Hoisting:</p>
+                <ul class="list-disc ml-4">
+                    <li>Al igual que let, las variables const no se “elevan” al principio del ámbito.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+
+</Layout>
