@@ -4,7 +4,7 @@ import Layout from '../../../layouts/Layout.astro';
 
 <Layout title='Variables'>
     <div class="md:w-1/2 m-auto flex flex-col gap-6 container mx-auto p-6">
-        <h1 class="text-3xl font-bold text-center text-purple-800">Variables y tipos de datos en javascript</h1>
+        <h1 class="text-3xl font-bold text-center text-purple-800 mb-12">Variables y tipos de datos en javascript</h1>
         <h2 class="text-2xl font-bold text-center text-purple-800">¿Qué es una Variable?</h2>
         <p class="text-xl text-center text-gray-700">
             <span class="text-purple-800 font-bold">Variable:</span> En programación, una variable es un contenedor que almacena un valor. Puedes pensar en ella como una caja etiquetada donde puedes guardar diferentes tipos de información, como números, texto o incluso objetos más complejos. Las variables son fundamentales para escribir código dinámico y flexible.
@@ -13,10 +13,10 @@ import Layout from '../../../layouts/Layout.astro';
         <p class="text-xl text-center text-gray-700">
             <span class="text-purple-800 font-bold">Constante:</span> Una constante es similar a una variable, pero con una diferencia importante: su valor no cambia una vez que se le asigna. Es decir, es inmutable. Las constantes se utilizan para representar valores fijos que no deben modificarse durante la ejecución del programa.
         </p>
-        <h2 class="text-2xl font-bold text-center text-purple-800">Tipos de variables en JS:</h2>
+        <h2 class="text-2xl font-bold text-center text-purple-800 mt-10">Tipos de variables en JS:</h2>
         
         <h4 class="text-purple-800 font-bold text-xl">VAR:</h4>
-        <ul class="list-disc ml-6 text-gray-700">
+        <ul class="list-disc ml-6 text-gray-700 text-lg">
             <li>
                 <p class="font-medium text-purple-800">Ámbito:</p>
                 <ul class="list-disc ml-4">
@@ -41,7 +41,7 @@ import Layout from '../../../layouts/Layout.astro';
         
                 
         <h4 class="text-purple-800 font-bold text-xl">LET:</h4>
-        <ul class="list-disc ml-6 text-gray-700">
+        <ul class="list-disc ml-6 text-gray-700 text-lg">
             <li>
                 <p class="font-medium text-purple-800">Ámbito:</p>
                 <ul class="list-disc ml-4">
@@ -64,7 +64,7 @@ import Layout from '../../../layouts/Layout.astro';
         </ul>
 
         <h4 class="text-purple-800 font-bold text-xl">CONST:</h4>
-        <ul class="list-disc ml-6 text-gray-700">
+        <ul class="list-disc ml-6 text-gray-700 text-lg">
             <li>
                 <p class="font-medium text-purple-800">Ámbito:</p>
                 <ul class="list-disc ml-4">
@@ -87,9 +87,9 @@ import Layout from '../../../layouts/Layout.astro';
             </li>
         </ul>
 
-        <h2 class="text-2xl font-bold text-center text-purple-800">¿Qué es ámbito, hosting, reasignación?</h2>
+        <h2 class="text-2xl font-bold text-center text-purple-800 my-10">¿Qué es ámbito, hosting, reasignación?</h2>
 
-        <p class="font-medium text-xl text-purple-800 text-center">Ámbito:</p>
+        <p class="font-medium text-xl text-purple-800 ">Ámbito:</p>
         <p class="text-xl text-center text-gray-700">
             El ámbito se refiere al alcance o contexto en el que una variable o función es válida y accesible.
             Hay dos tipos principales de ámbito:
@@ -97,24 +97,24 @@ import Layout from '../../../layouts/Layout.astro';
             Ámbito Local (o de Bloque): Las variables declaradas dentro de una función o un bloque de código (como un bucle o una estructura condicional) tienen un ámbito local. Solo son accesibles dentro de ese contexto.
         </p>
 
-        <p class="font-medium text-xl text-purple-800 text-center">Hoisting:</p>
+        <p class="font-medium text-xl text-purple-800 ">Hoisting:</p>
         <p class="text-xl text-center text-gray-700">
             El hoisting es un comportamiento en JavaScript donde las declaraciones de variables y funciones se mueven al principio de su ámbito antes de la ejecución del código.
             Esto significa que puedes usar una variable o invocar una función antes de declararla explícitamente.
             Sin embargo, ten en cuenta que solo las declaraciones se elevan, no las asignaciones.            
         </p>
 
-        <p class="font-medium text-xl text-purple-800 text-center">Reasignación:</p>
+        <p class="font-medium text-xl text-purple-800 ">Reasignación:</p>
         <p class="text-xl text-center text-gray-700">
             La reasignación se refiere a cambiar el valor de una variable después de su declaración inicial.
             En JavaScript, puedes reasignar valores a variables declaradas con var y let, pero no a las declaradas con const.              
         </p>
 
-        <h2 class="text-2xl font-bold text-center text-purple-800 ">Tipos</h2>
+        <h2 class="text-3xl font-bold text-center text-purple-800 my-10">Tipos</h2>
         <p class="text-xl text-center text-gray-700">
             En JavaScript, existen varios tipos de datos, y los tipos primitivos son los más fundamentales. Estos tipos primitivos son valores básicos que no son objetos y no tienen métodos asociados. A continuación, te presento los seis tipos primitivos en JavaScript:           
         </p>
-        <ul class="list-disc ml-6 text-gray-700">
+        <ul class="list-disc ml-6 text-gray-700 text-lg">
             <li>
                 <p class="font-medium text-purple-800">undefined:</p>
                 <ul class="list-disc ml-4">
