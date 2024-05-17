@@ -1,0 +1,232 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title='Operadores y Expresiones'>
+    <div class="md:w-1/2 m-auto flex flex-col gap-6 container mx-auto p-6">
+        <h1 class="text-3xl font-bold text-center text-purple-800 mb-12">Operadores y Expresiones en JavaScript</h1>
+        
+        <h2 class="text-2xl font-bold text-center text-purple-800">¿Qué es un Operador?</h2>
+        <p class="text-xl text-center text-gray-700">
+            <span class="text-purple-800 font-bold">Operador:</span> En programación, un operador es un símbolo que indica al compilador o intérprete que realice una operación específica. Los operadores en JavaScript permiten realizar cálculos, comparar valores, manipular bits, y más.
+        </p>
+
+        <h2 class="text-2xl font-bold text-center text-purple-800">¿Qué es una Expresión?</h2>
+        <p class="text-xl text-center text-gray-700">
+            <span class="text-purple-800 font-bold">Expresión:</span> Una expresión es cualquier fragmento de código que produce un valor. Las expresiones pueden consistir en valores literales, variables, operaciones matemáticas, llamadas a funciones, etc.
+        </p>
+
+        <h2 class="text-2xl font-bold text-center text-purple-800 mt-10">Tipos de Operadores en JS:</h2>
+        
+        <h4 class="text-purple-800 font-bold text-xl">Operadores Aritméticos:</h4>
+        <ul class="list-disc ml-6 text-gray-700 text-lg">
+            <li>
+                <p class="font-medium text-purple-800">Adición (`+`):</p>
+                <div class="border border-gray-200 rounded-lg p-4">
+                    <pre class="mt-6 text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded px-5 h-auto"><code>
+let suma = 5 + 3; // 8
+                    </code></pre>
+                </div>
+            </li>
+            <li>
+                <p class="font-medium text-purple-800">Sustracción (`-`):</p>
+                <div class="border border-gray-200 rounded-lg p-4">
+                    <pre class="mt-6 text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded px-5 h-auto"><code>
+let resta = 5 - 3; // 2
+                    </code></pre>
+                </div>
+            </li>
+            <li>
+                <p class="font-medium text-purple-800">Multiplicación (`*`):</p>
+                <div class="border border-gray-200 rounded-lg p-4">
+                    <pre class="mt-6 text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded px-5 h-auto"><code>
+let multiplicacion = 5 * 3; // 15
+                    </code></pre>
+                </div>
+            </li>
+            <li>
+                <p class="font-medium text-purple-800">División (`/`):</p>
+                <div class="border border-gray-200 rounded-lg p-4">
+                    <pre class="mt-6 text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded px-5 h-auto"><code>
+let division = 6 / 3; // 2
+                    </code></pre>
+                </div>
+            </li>
+            <li>
+                <p class="font-medium text-purple-800">Módulo (`%`):</p>
+                <div class="border border-gray-200 rounded-lg p-4">
+                    <pre class="mt-6 text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded px-5 h-auto"><code>
+let modulo = 7 % 3; // 1
+                    </code></pre>
+                </div>
+            </li>
+            <li>
+                <p class="font-medium text-purple-800">Incremento (`++`):</p>
+                <div class="border border-gray-200 rounded-lg p-4">
+                    <pre class="mt-6 text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded px-5 h-auto"><code>
+let x = 5;
+x++; // 6
+                    </code></pre>
+                </div>
+            </li>
+            <li>
+                <p class="font-medium text-purple-800">Decremento (`--`):</p>
+                <div class="border border-gray-200 rounded-lg p-4">
+                    <pre class="mt-6 text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded px-5 h-auto"><code>
+let x = 5;
+x--; // 4
+                    </code></pre>
+                </div>
+            </li>
+        </ul>
+
+        <h4 class="text-purple-800 font-bold text-xl">Operadores de Comparación:</h4>
+        <ul class="list-disc ml-6 text-gray-700 text-lg">
+            <li>
+                <p class="font-medium text-purple-800">Igualdad (`==`):</p>
+                <div class="border border-gray-200 rounded-lg p-4">
+                    <pre class="mt-6 text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded px-5 h-auto"><code>
+let igualdad = 5 == '5'; // true
+                    </code></pre>
+                </div>
+            </li>
+            <li>
+                <p class="font-medium text-purple-800">Igualdad estricta (`===`):</p>
+                <div class="border border-gray-200 rounded-lg p-4">
+                    <pre class="mt-6 text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded px-5 h-auto"><code>
+let igualdadEstricta = 5 === '5'; // false
+                    </code></pre>
+                </div>
+            </li>
+            <li>
+                <p class="font-medium text-purple-800">Desigualdad (`!=`):</p>
+                <div class="border border-gray-200 rounded-lg p-4">
+                    <pre class="mt-6 text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded px-5 h-auto"><code>
+let desigualdad = 5 != '5'; // false
+                    </code></pre>
+                </div>
+            </li>
+            <li>
+                <p class="font-medium text-purple-800">Desigualdad estricta (`!==`):</p>
+                <div class="border border-gray-200 rounded-lg p-4">
+                    <pre class="mt-6 text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded px-5 h-auto"><code>
+let desigualdadEstricta = 5 !== '5'; // true
+                    </code></pre>
+                </div>
+            </li>
+            <li>
+                <p class="font-medium text-purple-800">Mayor que (`>`):</p>
+                <div class="border border-gray-200 rounded-lg p-4">
+                    <pre class="mt-6 text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded px-5 h-auto"><code>
+let mayorQue = 5 &#62 3; // true
+                    </code></pre>
+                </div>
+            </li>
+            <li>
+                <p class="font-medium text-purple-800">Menor que (`<`):</p>
+                <div class="border border-gray-200 rounded-lg p-4">
+                    <pre class="mt-6 text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded px-5 h-auto"><code>
+let menorQue = 5 &#60 3; // false
+                    </code></pre>
+                </div>
+            </li>
+            <li>
+                <p class="font-medium text-purple-800">Mayor o igual que (`>=`):</p>
+                <div class="border border-gray-200 rounded-lg p-4">
+                    <pre class="mt-6 text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded px-5 h-auto"><code>
+let mayorOIgual = 5 &#62= 5; // true
+                    </code></pre>
+                </div>
+            </li>
+            <li>
+                <p class="font-medium text-purple-800">Menor o igual que (`<=`):</p>
+                <div class="border border-gray-200 rounded-lg p-4">
+                    <pre class="mt-6 text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded px-5 h-auto"><code>
+let menorOIgual = 5 &#60= 3; // false
+                    </code></pre>
+                </div>
+            </li>
+        </ul>
+
+        <h4 class="text-purple-800 font-bold text-xl">Operadores Lógicos:</h4>
+        <ul class="list-disc ml-6 text-gray-700 text-lg">
+            <li>
+                <p class="font-medium text-purple-800">AND (`&&`):</p>
+                <div class="border border-gray-200 rounded-lg p-4">
+                    <pre class="mt-6 text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded px-5 h-auto"><code>
+let and = true && false; // false
+                    </code></pre>
+                </div>
+            </li>
+            <li>
+                <p class="font-medium text-purple-800">OR (`||`):</p>
+                <div class="border border-gray-200 rounded-lg p-4">
+                    <pre class="mt-6 text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded px-5 h-auto"><code>
+let or = true || false; // true
+                    </code></pre>
+                </div>
+            </li>
+            <li>
+                <p class="font-medium text-purple-800">NOT (`!`):</p>
+                <div class="border border-gray-200 rounded-lg p-4">
+                    <pre class="mt-6 text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded px-5 h-auto"><code>
+let not = !true; // false
+                    </code></pre>
+                </div>
+            </li>
+        </ul>
+
+        <h4 class="text-purple-800 font-bold text-xl">Operadores de Asignación:</h4>
+        <ul class="list-disc ml-6 text-gray-700 text-lg">
+            <li>
+                <p class="font-medium text-purple-800">Asignación (`=`):</p>
+                <div class="border border-gray-200 rounded-lg p-4">
+                    <pre class="mt-6 text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded px-5 h-auto"><code>
+let x = 10;
+                    </code></pre>
+                </div>
+            </li>
+            <li>
+                <p class="font-medium text-purple-800">Asignación de adición (`+=`):</p>
+                <div class="border border-gray-200 rounded-lg p-4">
+                    <pre class="mt-6 text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded px-5 h-auto"><code>
+x += 5; // x = x + 5
+                    </code></pre>
+                </div>
+            </li>
+            <li>
+                <p class="font-medium text-purple-800">Asignación de sustracción (`-=`):</p>
+                <div class="border border-gray-200 rounded-lg p-4">
+                    <pre class="mt-6 text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded px-5 h-auto"><code>
+x -= 5; // x = x - 5
+                    </code></pre>
+                </div>
+            </li>
+            <li>
+                <p class="font-medium text-purple-800">Asignación de multiplicación (`*=`):</p>
+                <div class="border border-gray-200 rounded-lg p-4">
+                    <pre class="mt-6 text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded px-5 h-auto"><code>
+x *= 5; // x = x * 5
+                    </code></pre>
+                </div>
+            </li>
+            <li>
+                <p class="font-medium text-purple-800">Asignación de división (`/=`):</p>
+                <div class="border border-gray-200 rounded-lg p-4">
+                    <pre class="mt-6 text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded px-5 h-auto"><code>
+x /= 5; // x = x / 5
+                    </code></pre>
+                </div>
+            </li>
+            <li>
+                <p class="font-medium text-purple-800">Asignación de módulo (`%=`):</p>
+                <div class="border border-gray-200 rounded-lg p-4">
+                    <pre class="mt-6 text-lg text-left text-gray-700 bg-zinc-300 text-wrap rounded px-5 h-auto"><code>
+x %= 5; // x = x % 5
+                    </code></pre>
+                </div>
+            </li>
+        </ul>
+        <a class="text-purple-800 text-3xl font-bold text-center hover:text-purple-400 block mt-6" href="/frontend/javascript/estructuras-control">Estructuras de control...</a>
+    </div>
+</Layout>
