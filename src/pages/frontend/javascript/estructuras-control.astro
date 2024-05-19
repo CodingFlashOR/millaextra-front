@@ -1,0 +1,153 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title='Estructuras de Control en JavaScript'>
+    <div class="md:w-1/2 m-auto flex flex-col gap-6 container mx-auto p-6">
+        <h1 class="text-3xl font-bold text-center text-purple-800 mb-12">Estructuras de Control en JavaScript</h1>
+
+        <h2 class="text-2xl font-bold text-center text-purple-800">Condicionales</h2>
+        <p class="text-xl text-center text-gray-700">
+            Las estructuras condicionales permiten ejecutar código solo si se cumple una determinada condición.
+        </p>
+        
+        <h4 class="text-purple-800 font-bold text-xl">if y else:</h4>
+        <pre class="bg-gray-100 p-4 rounded"><code class="text-gray-700">
+let edad = 18;
+
+if (edad &#62= 18) &#123
+    console.log("Eres mayor de edad.");
+&#125 else &#123
+    console.log("Eres menor de edad.");
+&#125
+        </code></pre>
+        
+        <h4 class="text-purple-800 font-bold text-xl">else if:</h4>
+        <pre class="bg-gray-100 p-4 rounded"><code class="text-gray-700">
+let nota = 85;
+
+if (nota &#62= 90) &#123
+    console.log("Tienes una A.");
+&#125 else if (nota &#62= 80) &#123
+    console.log("Tienes una B.");
+&#125 else if (nota &#62= 70) &#123
+    console.log("Tienes una C.");
+&#125 else &#123
+    console.log("Necesitas mejorar.");
+&#125
+        </code></pre>
+
+        <h4 class="text-purple-800 font-bold text-xl">Operador ternario:</h4>
+        <pre class="bg-gray-100 p-4 rounded"><code class="text-gray-700">
+let edad = 20;
+let mensaje = edad &#62= 18 ? 
+    "Eres mayor de edad." : 
+    "Eres menor de edad.";
+console.log(mensaje);
+        </code></pre>
+        
+        <h2 class="text-2xl font-bold text-center text-purple-800 mt-10">Estructuras de Repetición</h2>
+        <p class="text-xl text-center text-gray-700">
+            Las estructuras de repetición permiten ejecutar un bloque de código múltiples veces.
+        </p>
+        
+        <h4 class="text-purple-800 font-bold text-xl">for:</h4>
+        <pre class="bg-gray-100 p-4 rounded"><code class="text-gray-700">
+for (let i = 0; i &lt; 5; i++) &#123
+    console.log(`Iteración número $&#123i&#125`);
+&#125
+        </code></pre>
+
+        <h4 class="text-purple-800 font-bold text-xl">while:</h4>
+        <pre class="bg-gray-100 p-4 rounded"><code class="text-gray-700">
+let contador = 0;
+
+while (contador &lt; 5) &#123
+    console.log(`Contador: $&#123contador&#125`);
+    contador++;
+&#125
+        </code></pre>
+
+        <h4 class="text-purple-800 font-bold text-xl">do...while:</h4>
+        <pre class="bg-gray-100 p-4 rounded"><code class="text-gray-700">
+let contador = 0;
+
+do &#123
+    console.log(`Contador: $&#123contador&#125`);
+    contador++;
+&#125 while (contador &lt; 5);
+        </code></pre>
+
+        <h2 class="text-2xl font-bold text-center text-purple-800 mt-10">Estructuras de Control de Flujo</h2>
+        <p class="text-xl text-center text-gray-700">
+            Las estructuras de control de flujo alteran el flujo de ejecución de un programa.
+        </p>
+        
+        <h4 class="text-purple-800 font-bold text-xl">switch:</h4>
+        <pre class="bg-gray-100 p-4 rounded"><code class="text-gray-700">
+let fruta = "manzana";
+
+switch (fruta) &#123
+    case "naranja":
+        console.log("El precio de la naranja es $0.59.");
+        break;
+    case "manzana":
+        console.log("El precio de la manzana es $0.32.");
+        break;
+    case "banana":
+        console.log("El precio de la banana es $0.48.");
+        break;
+    default:
+        console.log("Perdon, no tenemos " + fruta + ".");
+&#125
+        </code></pre>
+
+        <h2 class="text-2xl font-bold text-center text-purple-800 mt-10">Control de Bucles</h2>
+        <p class="text-xl text-center text-gray-700">
+            En los bucles, puedes utilizar <span class="font-mono">break</span> y <span class="font-mono">continue</span> para controlar el flujo de ejecución.
+        </p>
+
+        <h4 class="text-purple-800 font-bold text-xl">break:</h4>
+        <pre class="bg-gray-100 p-4 rounded"><code class="text-gray-700">
+for (let i = 0; i &lt; 10; i++) &#123
+    if (i === 5) &#123
+        break;
+    &#125
+    console.log(`Número: $&#123i&#125`);
+&#125
+        </code></pre>
+
+        <h4 class="text-purple-800 font-bold text-xl">continue:</h4>
+        <pre class="bg-gray-100 p-4 rounded"><code class="text-gray-700">
+for (let i = 0; i &lt; 10; i++) &#123
+    if (i === 5) &#123
+        continue;
+    &#125
+    console.log(`Número: $&#123i&#125`);
+&#125
+        </code></pre>
+
+        <h2 class="text-2xl font-bold text-center text-purple-800 my-10">Ejemplos Completos</h2>
+        <p class="text-xl text-center text-gray-700">
+            Podemos combinar condicionales y bucles para realizar tareas más complejas.
+        </p>
+
+        <pre class="bg-gray-100 p-4 rounded"><code class="text-gray-700">
+for (let i = 1; i &lt;= 20; i++) &#123
+    if (i % 2 === 0) &#123
+        console.log(`$&#123i&#125 es un número par.`);
+    &#125 else &#123
+        console.log(`$&#123i&#125 es un número impar.`);
+    &#125
+&#125
+        </code></pre>
+
+        <h2 class="text-2xl font-bold text-center text-purple-800 my-10">Consejos para Principiantes</h2>
+        <ul class="list-disc ml-6 text-gray-700 text-lg">
+            <li>Practica mucho: La mejor manera de aprender es practicando. Escribe mucho código y experimenta.</li>
+            <li>Lee y analiza: Lee código escrito por otros y trata de entender cómo funcionan sus estructuras de control.</li>
+            <li>Haz preguntas: Si algo no está claro, busca información adicional o pregunta a otros desarrolladores.</li>
+            <li>Usa herramientas de depuración: Utiliza la consola del navegador y herramientas de depuración para observar cómo se ejecuta tu código y para solucionar problemas.</li>
+        </ul>
+    </div>
+</Layout>
