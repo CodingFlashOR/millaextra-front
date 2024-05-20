@@ -1,0 +1,82 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title='Bucles'>
+    <div class="md:w-1/2 m-auto flex flex-col gap-6 container mx-auto p-6">
+        <h1 class="text-3xl font-bold text-center text-purple-800 mb-12">Bucles</h1>
+
+        <p class="text-xl text-center text-gray-700">
+            Las estructuras de repetición (Bucles) permiten ejecutar un bloque de código múltiples veces.
+        </p>
+        
+        <h4 class="text-purple-800 font-bold text-xl">for:</h4>
+        <pre class="bg-gray-100 p-4 rounded"><code class="text-gray-700">
+for (let i = 0; i &lt; 5; i++) &#123
+    console.log(`Iteración número $&#123i&#125`);
+&#125
+        </code></pre>
+
+        <h4 class="text-purple-800 font-bold text-xl">while:</h4>
+        <pre class="bg-gray-100 p-4 rounded"><code class="text-gray-700">
+let contador = 0;
+
+while (contador &lt; 5) &#123
+    console.log(`Contador: $&#123contador&#125`);
+    contador++;
+&#125
+        </code></pre>
+
+        <h4 class="text-purple-800 font-bold text-xl">do...while:</h4>
+        <pre class="bg-gray-100 p-4 rounded"><code class="text-gray-700">
+let contador = 0;
+
+do &#123
+    console.log(`Contador: $&#123contador&#125`);
+    contador++;
+&#125 while (contador &lt; 5);
+        </code></pre>
+
+        <h2 class="text-2xl font-bold text-center text-purple-800 mt-10">Control de Bucles</h2>
+        <p class="text-xl text-center text-gray-700">
+            En los bucles, puedes utilizar <span class="font-mono">break</span> y <span class="font-mono">continue</span> para controlar el flujo de ejecución.
+        </p>
+
+        <h4 class="text-purple-800 font-bold text-xl">break:</h4>
+        <pre class="bg-gray-100 p-4 rounded"><code class="text-gray-700">
+for (let i = 0; i &lt; 10; i++) &#123
+    if (i === 5) &#123
+        break;
+    &#125
+    console.log(`Número: $&#123i&#125`);
+&#125
+        </code></pre>
+
+        <h4 class="text-purple-800 font-bold text-xl">continue:</h4>
+        <pre class="bg-gray-100 p-4 rounded"><code class="text-gray-700">
+for (let i = 0; i &lt; 10; i++) &#123
+    if (i === 5) &#123
+        continue;
+    &#125
+    console.log(`Número: $&#123i&#125`);
+&#125
+        </code></pre>
+
+        <h2 class="text-2xl font-bold text-center text-purple-800 my-10">Ejemplos Completos con el Tema Anterior</h2>
+        <p class="text-xl text-center text-gray-700">
+            Podemos combinar condicionales y bucles para realizar tareas más complejas.
+        </p>
+
+        <pre class="bg-gray-100 p-4 rounded"><code class="text-gray-700">
+for (let i = 1; i &lt;= 20; i++) &#123
+    if (i % 2 === 0) &#123
+        console.log(`$&#123i&#125 es un número par.`);
+    &#125 else &#123
+        console.log(`$&#123i&#125 es un número impar.`);
+    &#125
+&#125
+        </code></pre>
+        <a class="text-purple-800 text-3xl font-bold text-center hover:text-purple-400 block mt-6" href="/frontend/javascript/funciones">Funciones...</a>
+    </div>
+
+</Layout>
