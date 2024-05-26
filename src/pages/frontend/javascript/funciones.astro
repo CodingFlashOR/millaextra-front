@@ -1,0 +1,99 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title="Definición de Funciones en JavaScript">
+    <div class="md:w-1/2 m-auto flex flex-col gap-6 container mx-auto p-6">
+        <h1 class="text-3xl font-bold text-center text-purple-800 mb-12">Funciones en JavaScript</h1>
+
+        <h2 class="text-2xl font-bold text-center text-purple-800 mt-10">Declaración de Función</h2>
+        <p class="text-xl text-center text-gray-700">
+            Una función puede ser declarada utilizando la palabra clave <code class="font-mono">function</code> seguida del nombre de la función, paréntesis y un bloque de código entre llaves.
+        </p>
+        <pre class="bg-gray-100 p-4 rounded"><code class="text-gray-700">
+function saludar() &#123
+  console.log("¡Hola, mundo!");
+&#125
+        </code></pre>
+
+        <h2 class="text-2xl font-bold text-center text-purple-800 mt-10">Expresiones de Función</h2>
+        <p class="text-xl text-center text-gray-700">
+            Las funciones también pueden ser definidas como expresiones y asignadas a variables. Este tipo de función se llama función anónima cuando no tiene nombre.
+        </p>
+        <pre class="bg-gray-100 p-4 rounded"><code class="text-gray-700">
+const saludar = function() &#123
+  console.log("¡Hola, mundo!");
+&#125;
+        </code></pre>
+
+        <h2 class="text-2xl font-bold text-center text-purple-800 mt-10">Invocación de Funciones</h2>
+        <p class="text-xl text-center text-gray-700">
+            Para ejecutar una función, se llama a su nombre seguido de paréntesis.
+        </p>
+        <pre class="bg-gray-100 p-4 rounded"><code class="text-gray-700">
+saludar(); // ¡Hola, mundo!
+        </code></pre>
+
+        <h2 class="text-2xl font-bold text-center text-purple-800 mt-10">Parámetros y Argumentos</h2>
+        <p class="text-xl text-center text-gray-700">
+            Las funciones pueden aceptar parámetros que actúan como variables locales dentro de la función. Los valores que pasas cuando llamas a la función se llaman argumentos.
+        </p>
+        <pre class="bg-gray-100 p-4 rounded"><code class="text-gray-700">
+function saludar(nombre) &#123
+  console.log("¡Hola, " + nombre + "!");
+&#125
+
+saludar("Carlos"); // ¡Hola, Carlos!
+        </code></pre>
+
+        <h2 class="text-2xl font-bold text-center text-purple-800 mt-10">Valor de Retorno</h2>
+        <p class="text-xl text-center text-gray-700">
+            Las funciones pueden devolver un valor utilizando la palabra clave <code class="font-mono">return</code>.
+        </p>
+        <pre class="bg-gray-100 p-4 rounded"><code class="text-gray-700">
+function sumar(a, b) &#123
+  return a + b;
+&#125
+
+let resultado = sumar(3, 4); // 7
+        </code></pre>
+
+        <h2 class="text-2xl font-bold text-center text-purple-800 mt-10">Funciones Flecha</h2>
+        <p class="text-xl text-center text-gray-700">
+            Introducidas en ES6, las funciones flecha ofrecen una sintaxis más compacta y tienen un comportamiento especial con el valor <code class="font-mono">this</code>.
+        </p>
+        <pre class="bg-gray-100 p-4 rounded"><code class="text-gray-700">
+const saludar = (nombre) => &#123
+  console.log("¡Hola, " + nombre + "!");
+&#125;
+
+const sumar = (a, b) => a + b;
+
+saludar("Ana"); // ¡Hola, Ana!
+let resultado = sumar(5, 3); // 8
+        </code></pre>
+
+        
+        <h2 class="text-2xl font-bold text-center text-purple-800 mt-10">Ámbito (Scope)</h2>
+        <p class="text-xl text-center text-gray-700">
+            El ámbito de una variable define dónde está disponible. En JavaScript, existen dos tipos de ámbito:
+        </p>
+        <ul class="list-disc ml-6 text-gray-700 text-lg">
+            <li><span class="font-bold text-purple-800">Ámbito global:</span> Las variables definidas fuera de cualquier función tienen ámbito global.</li>
+            <li><span class="font-bold text-purple-800">Ámbito local:</span> Las variables definidas dentro de una función tienen ámbito local a esa función.</li>
+        </ul>
+        <pre class="bg-gray-100 p-4 rounded"><code class="text-gray-700">
+let global = "Soy global";
+
+function miFuncion() &#123
+  let local = "Soy local";
+  console.log(global); // Soy global
+  console.log(local);  // Soy local
+&#125
+
+miFuncion();
+console.log(local); // Error: local is not defined
+        </code></pre>
+
+        <a class="text-purple-800 text-3xl font-bold text-center hover:text-purple-400 block mt-6" href="/frontend/javascript/alcance-variables">Alcance de las variables...</a>
+</Layout>
