@@ -39,7 +39,7 @@ MillaExtra es una plataforma de aprendizaje en línea comprometida con proporcio
     ```
 
 ### 1.5. Repositorio
-- [Repositorio Principal](https://github.com/CodingFlashOR#12-inmobiliaria-bonpland).
+- [Repositorio Principal](https://github.com/CodingFlashOR#12-millaextra).
 
 ### 1.6. Colaboradores
 A continuación se presentan a las personas que están aportando al desarrollo de este proyecto.
