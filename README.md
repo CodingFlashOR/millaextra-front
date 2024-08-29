@@ -7,12 +7,12 @@
 </div>
 
 ### 1.1. Descripción
-MillaExtra es una plataforma de aprendizaje en línea comprometida con proporcionar material de estudio de alta calidad y recursos para aquellos interesados en el desarrollo web. Nuestra misión es ayudar a los estudiantes a explorar más profundamente, ir más allá de lo básico y obtener una comprensión más completa de la programación web.
+MillaExtra es una plataforma de aprendizaje en línea comprometida con proporcionar material de estudio de alta calidad y recursos para aquellos interesados en el desarrollo web. Nuestra misión es ayudar a los estudiantes a explorar más prohttps://i.ibb.co/RTTqvKp/Technologies-Frontend-IB.pngfundamente, ir más allá de lo básico y obtener una comprensión más completa de la programación web.
 
 
 ### 1.2. Tecnologías utilizadas
 <div>
-      <img src="https://i.ibb.co/pRPtMcF/Technologies-Frontend-IB.png">
+      <img src="https://i.ibb.co/RTTqvKp/Technologies-Frontend-IB.png">
 </div>
 
 ## 1.3. Instalación del proyecto
